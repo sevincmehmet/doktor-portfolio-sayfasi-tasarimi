@@ -44,7 +44,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="container">
+      <div className="container mt-4">
         <h2 className="home-title text-center" style={{ fontSize: "31.5px" }}>
           How can I Help You?
         </h2>
