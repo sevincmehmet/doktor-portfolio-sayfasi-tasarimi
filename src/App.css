@@ -11,6 +11,7 @@
 }
 
 #home {
+  padding: 100px 0;
   background: var(--main-color);
 }
 
@@ -36,5 +37,13 @@
 @media (max-width: 991.98px) {
   .maps-container {
     height: 250px;
+  }
+  #home {
+    padding: 80px 0;
+  }
+}
+@media (max-width: 767.98px) {
+  #home {
+    padding: 50px 0;
   }
 }

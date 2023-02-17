@@ -19,7 +19,7 @@ const Home = () => {
           </div>
           <div
             id="write-container"
-            className="col-auto col-sm-8 col-md-6 col-xxl-5"
+            className="col-auto col-sm-8 col-md-6  col-xxl-5"
           >
             <h1 className="home-title display-1">Dr. Courtney Williams</h1>
             <h3 className="text-primary home-link">
@@ -44,14 +44,15 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      {/* Alt taraf */}
       <div className="container mt-4">
         <h2 className="home-title text-center" style={{ fontSize: "31.5px" }}>
           How can I Help You?
         </h2>
         <br />
-        
         <div className="row row-30">
-          <div className="offset-xxl-1 col-xxl-10 offset-xxl-1">
+          <div className="offset-xxl-1 col-xxl-10 offset-xxl-1 ">
             <div className="row">
               <div className="col-sm-6 col-md-4 mb-4">
                 <article className="blurb blurb-hover">

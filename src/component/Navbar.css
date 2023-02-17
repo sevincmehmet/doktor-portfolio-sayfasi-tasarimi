@@ -108,9 +108,9 @@ a {
     bottom: 1rem;
     padding: 0.3rem 0.9 rem;
 }
-/* button:focus:not(:focus-visible) {
+button:focus:not(:focus-visible) {
     outline: 0;
-} */
+}
 .navbar-toggler:focus {
     text-decoration: none;
     outline: 0;
@@ -186,6 +186,7 @@ top: 5px;
 position: absolute;
 top: 0px;
 }
+
 @media (max-width: 1199.98px) {
     nav{
         width: 100%;
@@ -212,9 +213,7 @@ top: 0px;
         width: 300px;
         top: 0;
         left: 0;
-        transition: 0.3s ease;
         transform: translateX(-300px);
-    
     }
     .offcanvas ul li { 
         list-style: none;
@@ -225,7 +224,6 @@ top: 0px;
     .offcanvas ul li a {
         font-size: 20.44px;
         font-weight: 400;
-    
         color: var(--threed-color);
     }
     .offcanvas-body {
@@ -234,11 +232,9 @@ top: 0px;
         flex-grow: 1;
     }
     .offcanvas-backdrop {
-        background-color: transparent;
+        display: none;
     }
     #make {
         display: none;
     }
-
-    
 }

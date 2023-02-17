@@ -20,6 +20,8 @@ function Navbars() {
             setWindowSize([window.innerWidth, window.innerHeight]);
         };
 
+
+        
         window.addEventListener('resize', handleWindowResize);
 
         return () => {
@@ -28,6 +30,11 @@ function Navbars() {
         };
     });
 
+    function bodyStyleControl(){
+        if(document.body.style.length) {
+            document.body.style.cssText = ""
+        }
+    }
 
     const scroolAnimate = () => {
         if (window.scrollY > 3) {
@@ -68,14 +75,16 @@ function Navbars() {
                     expand={"xl"}
                     className={scroolActive || windowSize[0] < 1200 ? " nav__container mb-3" : "nav-shadow nav__container mb-3"}
                 >
-                    <Container fluid style={{ padding: "0 0" }}>
+                    <Container fluid >
                         <Navbar.Brand href="#">
                             <div className="logo">
                                 <img src={logo} ></img>
                             </div>
                         </Navbar.Brand>
                         <div className="navbar-spaces"></div>
-                        <Navbar.Toggle id="menu-icon-div" aria-controls={`offcanvasNavbar-expand-${"xl"}`} />
+                        <Navbar.Toggle id="menu-icon-div" aria-controls={`offcanvasNavbar-expand-${"xl"}`} onClick={()=>{setTimeout(function(){
+                            bodyStyleControl()
+                        },1)}}/>
                         <Navbar.Offcanvas className="menu-icon"
                             id={`offcanvasNavbar-expand-${"xl"}`}
                             aria-labelledby={`offcanvasNavbarLabel-expand-${"xl"}`}
