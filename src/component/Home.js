@@ -3,7 +3,7 @@ import "./Home.css";
 const Home = () => {
   return (
     <>
-      <div className="container" style={{ padding: "100px 0" }}>
+      <div className="container">
         <div
           className="row row-30 justify-content-center justify-content-md-between flex-md-row-reverse justify-content-xxl-center
 "
