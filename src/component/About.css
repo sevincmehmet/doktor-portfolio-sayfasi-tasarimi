@@ -1,0 +1,50 @@
+#homeSection {
+    width: 50%;
+    margin: 25%;
+    background-color: red;
+    height: 1rem;
+}
+.about-title {
+    font-size: 31.5px;
+    text-align: start;
+    font-weight: 600;
+    color: var(--black-color);
+}
+
+.list-marked-2 > .list-item {
+    padding-left: 1.5rem;
+
+}
+.list-marked-2 > .list-item::before {
+    display: inline-block;
+    margin-left: -1.625rem;
+    min-width: 1.625rem;
+    font-family: "Material Design Icons";
+    font-size: 1.2em;
+    content: '\f222';
+    vertical-align: middle;
+    color: #177ee5;
+    transform: translateY(-1px);
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+ul, ol {
+    padding: 1rem 0 ;
+    margin: 0;
+    list-style: none;
+}
+ol, ul, dl {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+
+.about-link {
+    font-weight: 400;
+    margin: 12.86px 0 0 0 ;
+    font-size: 21px;
+} 
+.about-p {
+    margin: 23.88px 0 0;
+}

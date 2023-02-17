@@ -1,0 +1,37 @@
+.quote {
+    box-sizing: border-box;
+    display: block;
+    margin-block-start: 2rem;
+    margin-block-end: 2rem;
+    /* margin-inline-start: 50px;
+    margin-inline-end:50px; */
+    border: 1px solid #e1e7ed;;
+}
+.quote {
+    padding: 1.70625rem 1.6625rem;
+}
+.quote-author {
+    color: #828CA5;
+    margin-bottom: 18.75px;
+}
+.quote-author-img {
+    border-radius: 50px;
+}
+.quote-author-body {
+    padding: 0 0 0 20px;
+}
+.quote-cite{
+    color: var(--black-color);
+    font-family:sans-serif;
+}
+.quote-text.h5 {
+    color: var(--black-color);
+    margin: 18.375px 0px 0px;
+    font-weight: 400;
+    font-size: 15.75px;
+}
+.quote .quote-author {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}

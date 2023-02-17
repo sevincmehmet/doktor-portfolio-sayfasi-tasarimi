@@ -1,0 +1,121 @@
+#write-container {
+    margin-inline-start: 38px;
+}
+
+.home-title {
+    font-size: 56px;
+    text-align: start;
+    font-weight: 600;
+    color: var(--black-color);
+}
+.home-link {
+    font-size: 21px;
+    margin: 12.8625px 0 0;
+}
+.telephone-div {
+  display: flex;
+  margin: 26.3375px 0px -12.25px 0px ;
+}
+.telephone-item {
+    height: 70px;
+    width: 70px;
+    background-color: var(--second-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+.telephone-body {
+    margin: 0px 0px 12.25px 17.5px;
+}
+.telephone-body a{
+    font-size: 31.5px;
+    font-weight: 900;
+}
+.telephone-body a:hover{
+    color: var(--threed-color);
+}
+.telephone-text {
+    font-size: 12.25px;
+    margin: 11.6375px 0px 0px;
+    color: gray;
+    font-weight: 300;
+}
+.telephone-adress {
+    font-size: 15.75px;
+    margin: 14px 0 0 0;
+    font-weight: 500;
+}
+#home-img {
+    position: relative;
+    right: 1rem;
+    display: block;
+    margin: auto;
+    cursor: zoom-in;
+    background-color: hsl(0, 0%, 90%);
+    transition: background-color 300ms;
+}
+#img-container {
+    padding-bottom: 2rem;
+}
+.blurb-icon {
+    transition: all 0.2s ease-in-out;
+}
+.icon {
+    display: inline-flex;
+    line-height: 1;
+}
+.blurb-title h3{
+    font-size: 21px;
+    margin: 19px 0 0 0;
+    color: var(--black-color);
+}
+.blurb-text {
+    font-size: 14px;
+    color: #828ca5;
+    margin: 11.6px 0 0 0;
+}
+  /* If the screen size is smaller than 1200px, set the font-size to 80px */
+  @media (max-width: 1199.98px) {
+    #write-container {
+        margin-inline-start: 0;
+
+    }
+    .home-title {
+      font-size: 33.6px;
+    }
+    .home-link {
+        font-size: 21px;
+        margin: 12.8625px 0 0;
+    }
+    .telephone-div {
+      display: flex;
+      margin: 26.3375px 0px -12.25px 0px ;
+    
+    }
+    .telephone-body a{
+        font-size: 25.2px;
+    }
+    .telephone-body a:hover{
+        color: var(--threed-color);
+    }
+    .telephone-adress {
+        font-size: 18.2px;      
+    }
+    #home-img {    
+     width: 356px;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+
+    .telephone-item {
+        height: 43.75px;
+        width: 43.75px;
+    }
+
+    .telephone-item img{
+        height: 17.5px;
+        width: 17.5px;
+    }
+  }

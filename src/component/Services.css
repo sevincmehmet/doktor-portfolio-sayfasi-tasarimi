@@ -1,0 +1,95 @@
+.services-title {
+    color: var(--black-color);
+    font-size: 31.5px;
+    font-weight: 600;
+}
+.accordion-items {
+    border: none;
+    outline: none;
+}
+
+.accordion-header .h3{
+    font-size: 21px;
+    /* color: var(--black-color); */
+    margin: 0;
+    padding: 16.625px 0; 
+}
+.numberColor{
+    color: #828CA5;
+}
+.accordionActive{
+    color: var(--threed-color);
+}
+
+
+.accordion .accordion-header .h3:hover {
+    color: var(--threed-color);
+}
+.accordion-title:hover {
+    color: var(--threed-color);
+}
+.accordion-item {
+    border:none;
+    border-bottom: 1px solid #e5e5e5 ;
+    border-radius: 0px;
+}
+.accordion-button {
+    background-color: var(--main-color);
+    align-items: center;
+    padding: 0;
+}
+
+.accordion-body{
+    background-color: var(--main-color);
+    border-bottom:1px solid #e5e5e5;
+    font-size: 14px;
+    color: #828CA5;
+}
+.accordion-item:last-of-type .accordion-button.collapsed {
+    border-radius: 0px;
+}
+.accordion-item:first-of-type .accordion-button {
+    border-radius: 0px;
+}
+
+.accordion-button:focus {
+    background-color: var(--main-color);
+    box-shadow: none;
+}
+.accordion-button::after {
+    width: 0;
+    height: 0;
+    margin-left: auto;
+    content: "";
+    background-repeat: no-repeat;
+}
+.list-marked {
+    position: relative;
+    left: 0.240rem;
+    padding: 0;
+}
+.list-marked > .list-item {
+    padding: 3px 1.4375rem 3px 20.125px;
+}
+.list-marked > .list-item::before {
+    display: inline-block;
+    vertical-align: middle;
+    content: '';
+    width: 0.63em;
+    height: 0.63em;
+    margin-left: -1.4375rem;
+    margin-top: -1px;
+    margin-right: 0.875rem;
+    border-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background: #177ee5;
+    will-change: transform;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: var(--main-color);
+    box-shadow: none;
+}

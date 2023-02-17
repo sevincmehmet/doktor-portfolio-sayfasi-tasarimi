@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;300;600&display=swap');
+
+.navActive {
+    display: flex;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;   
+    z-index: 2;
+    height: 65px;
+    min-height: 60px;
+    z-index: 99999;
+    background-color: var(--second-color);  
+    width: 100%;
+    transition: height 0.2s, box-shadow 0.2s;
+    align-items: center;
+    box-shadow: 0 0 28px rgb(130 140 165 / 10%);
+}
+.nav {
+    transition: height 0.2s, box-shadow 0.2s;
+    display: flex;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;   
+    z-index: 2;
+    height: 104px;
+    min-height: 70px;
+    z-index: 999;
+    background-color: var(--main-color);  
+    margin: 0 auto;
+}
+.nav__container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.nav-shadow{
+    border-bottom: 1px solid  rgba(128, 128, 128, 0.111);
+}
+.logo{
+    padding:0 23px 0 0;
+    position: relative;
+    top: 6px;
+}
+.logo img {
+    width: 130px;
+}
+
+.navbar-spaces {
+    width: 252px;
+}
+.active {
+    font-weight: bold;
+}
+
+Nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    position: relative;
+    top:15px;
+}
+
+Nav li {
+    cursor: pointer;
+    align-items: center;
+    padding: 0 12px;
+    height: 104px;
+    display: flex;
+    align-items: center;
+    
+}
+Nav li:last-child{
+    padding: 0;
+}
+Nav li a{
+    font-size: 14px;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 300;
+    color: var(--threed-color);
+}
+Navli:hover {
+    text-decoration: underline;
+}
+a {
+    color: var(--black-color);
+    text-decoration:none;
+}
+.position-before {
+    position: sticky;
+    top: 15px;
+}
+#menu-icon-div{
+    border: none;
+    padding: 0 2rem;
+    font-size: 1.5rem;
+}
+
+#make {
+    position: relative;
+    bottom: 1rem;
+    padding: 0.3rem 0.9 rem;
+}
+/* button:focus:not(:focus-visible) {
+    outline: 0;
+} */
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow:none;
+}
+.offcanvas ul li a {
+    cursor: pointer;
+}
+
+.dot-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: blueviolet;
+    position: absolute;
+    right: 0;
+    top: 3rem;
+    background-color: #fff;
+}
+#dotMake{
+    height: 50px;
+    width: 170px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center
+;}
+.setting-icon {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 3rem;
+    z-index: 99999;
+    flex-direction: column;
+    height: 45px;
+    width: 10px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--black-color);
+    cursor: pointer;
+    transform: 0.2s ease;
+    align-items: center;
+    transition: 0.3s ease;
+
+    transform: rotateZ(0deg);
+
+}
+.closeButton {
+    transform: rotateZ(45deg);
+    color: var(--black-color);
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+}
+.rotate-dot{
+    transition: 0.3s ease;
+    transform: rotateZ(-45deg);
+}
+#setting-icon-item-0 {
+    position: absolute;
+    top: -5px;
+}
+#setting-icon-item-1 {
+position: absolute;
+top: 5px;
+}
+#setting-icon-item-2 {
+position: absolute;
+top: 0px;
+}
+@media (max-width: 1199.98px) {
+    nav{
+        width: 100%;
+    }
+    .logo{
+        display: flex;
+        position: absolute;
+        left: calc(50% - 65px);
+        top: 19px;
+    }
+    .logo img {
+        width: 110px;
+    }
+    #menu-icon-div{
+      position: absolute;
+        top: calc(50% - 10px);
+        display: flex;
+        justify-content: flex-start;
+    }
+    .offcanvas{
+        background-color: #f7f7f7;
+    }
+    .offcanvas.offcanvas-end {
+        width: 300px;
+        top: 0;
+        left: 0;
+        transition: 0.3s ease;
+        transform: translateX(-300px);
+    
+    }
+    .offcanvas ul li { 
+        list-style: none;
+        padding: 14px 30px;
+        color: var(--black-color);
+        font-weight: 400;
+    }
+    .offcanvas ul li a {
+        font-size: 20.44px;
+        font-weight: 400;
+    
+        color: var(--threed-color);
+    }
+    .offcanvas-body {
+        padding: 0;
+        overflow-y: auto;
+        flex-grow: 1;
+    }
+    .offcanvas-backdrop {
+        background-color: transparent;
+    }
+    #make {
+        display: none;
+    }
+
+    
+}
