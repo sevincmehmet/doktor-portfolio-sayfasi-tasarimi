@@ -15,27 +15,18 @@ function Navbars() {
         window.innerHeight,
     ]);
 
+    document.body.style.cssText="padding-right: 0px !important;"
     useEffect(() => {
         const handleWindowResize = () => {
             setWindowSize([window.innerWidth, window.innerHeight]);
         };
-
-
         
         window.addEventListener('resize', handleWindowResize);
 
         return () => {
             window.removeEventListener('resize', handleWindowResize);
-            // ! console.log(windowSize);
         };
     });
-
-    function bodyStyleControl(){
-        if(document.body.style.length) {
-            document.body.style.cssText = ""
-        }
-    }
-
     const scroolAnimate = () => {
         if (window.scrollY > 3) {
             setScroolActive(true)
@@ -61,8 +52,7 @@ function Navbars() {
                         <div className="closeButton">
                             X
                         </div>
-                    </>
-                       
+                    </>       
                     }
                 </div>
                 <div className={dotClick? "d-xl-none dot-modal":"d-none dot-modal"}>
@@ -82,9 +72,7 @@ function Navbars() {
                             </div>
                         </Navbar.Brand>
                         <div className="navbar-spaces"></div>
-                        <Navbar.Toggle id="menu-icon-div" aria-controls={`offcanvasNavbar-expand-${"xl"}`} onClick={()=>{setTimeout(function(){
-                            bodyStyleControl()
-                        },1)}}/>
+                        <Navbar.Toggle id="menu-icon-div" aria-controls={`offcanvasNavbar-expand-${"xl"}`} />
                         <Navbar.Offcanvas className="menu-icon"
                             id={`offcanvasNavbar-expand-${"xl"}`}
                             aria-labelledby={`offcanvasNavbarLabel-expand-${"xl"}`}
@@ -92,9 +80,7 @@ function Navbars() {
                         >
 
                             <Offcanvas.Header closeButton>
-                                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${"xl"}`}>
-                                </Offcanvas.Title>
-
+                                
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Nav className="text-nav justify-content-end flex-grow-1">
