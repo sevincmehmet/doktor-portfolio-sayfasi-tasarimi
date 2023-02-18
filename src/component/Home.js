@@ -10,7 +10,7 @@ const Home = () => {
         >
           <div
             id="img-container"
-            className="col-auto col-sm-8 col-md-6 col-lg-5 col-xl-6S"
+            className="col-auto col-sm-8 col-md-6 col-lg-5 rounded float-left img-fluid"
           >
             <img
               id="home-img"

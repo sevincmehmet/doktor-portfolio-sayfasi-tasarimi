@@ -125,7 +125,18 @@
 
   @media (max-width: 413.98px) {
     #img-container {
-        position: relative;
-        left: 1rem;
+        width: 370px;
+        padding: 1rem;
     }
   }
+  @media (max-width: 406.98px) {
+    #img-container {
+        width: 340px;
+    }
+  }
+
+  @media (max-width: 354.98px) {
+    #img-container {
+        width: 280px;
+    }
+}

@@ -10,12 +10,14 @@ import { useEffect, useState } from "react";
 function Navbars() {
     const [scroolActive, setScroolActive] = useState(false);
     const [dotClick, setDotClick] = useState(false)
+    const [sideBarActive, setSideBarActive] = useState(false)
     const [windowSize, setWindowSize] = useState([
         window.innerWidth,
         window.innerHeight,
     ]);
+    
+    document.body.style.cssText="padding-right: 0px !important;";
 
-    document.body.style.cssText="padding-right: 0px !important;"
     useEffect(() => {
         const handleWindowResize = () => {
             setWindowSize([window.innerWidth, window.innerHeight]);
@@ -56,7 +58,9 @@ function Navbars() {
                     }
                 </div>
                 <div className={dotClick? "d-xl-none dot-modal":"d-none dot-modal"}>
-                    <Link id="dotMake" className="btn btn-primary" activeClass="active" spy to="contacts">
+                    <Link id="dotMake" className="btn btn-primary" activeClass="active" spy to="contacts" onClick={() => {
+                    setDotClick(!dotClick);
+                }}>
                         Make appointment
                     </Link>
                 </div>
@@ -72,46 +76,49 @@ function Navbars() {
                             </div>
                         </Navbar.Brand>
                         <div className="navbar-spaces"></div>
-                        <Navbar.Toggle id="menu-icon-div" aria-controls={`offcanvasNavbar-expand-${"xl"}`} />
-                        <Navbar.Offcanvas className="menu-icon"
+                       
+                        {/* <button className=" btn btn-danger" type="button" }></button> */}
+                        <div id="menu-icon-div">
+                        <i className="menu-icon d-xl-none fa-sharp fa-solid fa-bars" onClick={()=> {setSideBarActive(!sideBarActive);}}></i>
+
+                        </div>
+                        <Navbar.Offcanvas className={sideBarActive? "menu-icon show": "menu-icon"}
                             id={`offcanvasNavbar-expand-${"xl"}`}
                             aria-labelledby={`offcanvasNavbarLabel-expand-${"xl"}`}
                             placement="end"
                         >
 
-                            <Offcanvas.Header closeButton>
-                                
-                            </Offcanvas.Header>
+                            
                             <Offcanvas.Body>
                                 <Nav className="text-nav justify-content-end flex-grow-1">
                                     <ul>
-                                        <li>
-                                            <Link activeClass="active" spy to="home">
+                                        <li >
+                                            <Link activeClass="active" spy to="home" onClick={()=> {setSideBarActive(!sideBarActive);}}>
                                                 Home
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link activeClass="active" spy to="about">
+                                            <Link activeClass="active" spy to="about"onClick={()=> {setSideBarActive(!sideBarActive);}}>
                                                 About
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link activeClass="active" spy to="services">
+                                            <Link activeClass="active" spy to="services"onClick={()=> {setSideBarActive(!sideBarActive);}}>
                                                 Services
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link activeClass="active" spy to="reviews">
+                                            <Link activeClass="active" spy to="reviews"onClick={()=> {setSideBarActive(!sideBarActive);}}>
                                                 Reviews
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link activeClass="active" spy to="contacts">
+                                            <Link activeClass="active" spy to="contacts"onClick={()=> {setSideBarActive(!sideBarActive);}}>
                                                 Contacts
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link id="make" className="btn btn-primary" activeClass="active" spy to="contacts">
+                                            <Link id="make" className="btn btn-primary" activeClass="active"onClick={()=> {setSideBarActive(!sideBarActive);}} spy to="contacts">
                                                 Make appointment
                                             </Link>
                                         </li>

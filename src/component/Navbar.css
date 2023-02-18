@@ -60,22 +60,21 @@
 
 Nav ul {
     display: flex;
-    gap: 1rem;
     list-style: none;
     padding: 0;
     align-items: center;
     position: relative;
-    top:15px;
+    top:7px;
+    margin: 0;
 }
 
 Nav li {
     cursor: pointer;
     align-items: center;
     padding: 0 12px;
-    height: 104px;
     display: flex;
     align-items: center;
-    
+    width: 100%;
 }
 Nav li:last-child{
     padding: 0;
@@ -85,6 +84,7 @@ Nav li a{
     font-family: 'Epilogue', sans-serif;
     font-weight: 300;
     color: var(--threed-color);
+    height: auto;
 }
 Navli:hover {
     text-decoration: underline;
@@ -131,15 +131,19 @@ button:focus:not(:focus-visible) {
     top: 3rem;
     background-color: #fff;
 }
+#make,
 #dotMake{
     height: 50px;
     width: 170px;
-    margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center
 ;}
+#dotMake {
+    margin: 0;
+
+}
 .setting-icon {
     display: flex;
     position: absolute;
@@ -186,6 +190,10 @@ top: 5px;
 position: absolute;
 top: 0px;
 }
+.menu-icon {
+    cursor: pointer;
+}
+
 
 @media (max-width: 1199.98px) {
     nav{
@@ -201,8 +209,8 @@ top: 0px;
         width: 110px;
     }
     #menu-icon-div{
-      position: absolute;
-        top: calc(50% - 10px);
+        position: absolute;
+        top: calc(50% - 5px);
         display: flex;
         justify-content: flex-start;
     }
@@ -211,9 +219,16 @@ top: 0px;
     }
     .offcanvas.offcanvas-end {
         width: 300px;
-        top: 0;
+        top: 65px;
         left: 0;
         transform: translateX(-300px);
+    }
+    .offcanvas ul  { 
+        position: relative;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .offcanvas ul li { 
         list-style: none;
@@ -234,6 +249,9 @@ top: 0px;
     .offcanvas-backdrop {
         display: none;
     }
+    /* .offcanvas-backdrop.show {
+        display: none;
+    } */
     #make {
         display: none;
     }

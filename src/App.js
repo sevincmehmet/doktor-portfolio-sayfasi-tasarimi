@@ -51,7 +51,7 @@ const App = () => {
       <section id="reviews"><Reviews /></section>
       <section id="contacts"><Contacts /></section>
 
-      <section className="maps-container">
+      {/* <section className="maps-container">
         {isLoaded ? <GoogleMap
           mapContainerStyle={containerStyle}
           center={center}
@@ -65,7 +65,7 @@ const App = () => {
           : <>
           </>
         }
-      </section>
+      </section> */}
     </div>
 
 
