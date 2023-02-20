@@ -50,7 +50,7 @@ const Home = () => {
 
     <div className="space"></div>
       {/* Alt taraf */}
-      <div className="container mt-4 pt-5">
+      <div className="container pt-5">
         <h2 className="home-title text-center" style={{ fontSize: "31.5px" }}>
         Sağlık Hizmeti Alanlarım        
         </h2>
