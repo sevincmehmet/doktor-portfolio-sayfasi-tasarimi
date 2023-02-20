@@ -31,9 +31,9 @@ const About = () => {
                   <p className="blurb-text about-p lh-base">
                   Bebek ve Çocuk Sağlığı Hastalıkları Uzmanıyım. Tıpkı YouTube kanalımda yaptığım gibi bu sitede de <span className="fw-bold">BEBEK VE ÇOCUK SAĞLIĞI VE HASTALIKLARI</span> hakkında bilmeniz gereken her şeyi bulacaksınız! Hamilelik döneminden, yeni doğan dönemine, çocuğunuzun yaşamı boyunca ihtiyaç duyacağınız bilgiler burada olacak. 
                   </p>
-                  <ul className="list list-marked-2 fw-medium text-dark">
+                  <ul className="list list-marked fw-medium text-dark">
                     
-                    <li className="list-title fs-6">
+                    <li className="list-title fs-5 fw-bold mt-4 mb-2">
                       İlgi Alanları
                     </li>
                     <li className="list-item">
