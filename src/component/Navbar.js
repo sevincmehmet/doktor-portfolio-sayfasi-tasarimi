@@ -110,11 +110,7 @@ function Navbars() {
                                                 Hizmetlerim
                                             </Link>
                                         </li>
-                                        <li>
-                                            <Link activeClass="active" className="nav-link" spy to="reviews" onClick={() => { setSideBarActive(!sideBarActive); }}>
-                                                Yorumlar
-                                            </Link>
-                                        </li>
+                                        
                                         <li>
                                             <Link activeClass="active" className="nav-link" spy to="contacts" onClick={() => { setSideBarActive(!sideBarActive); }}>
                                                 İletişim

@@ -40,7 +40,7 @@ const About = () => {
                     Çocuklarda Gelişme Bozuklukları 
                     </li>
                     <li className="list-item">
-                    Ergenlikte büyüme gelişme 
+                    Ergenlikte Büyüme Gelişme 
                     </li>
                     <li className="list-item">
                     Yenidoğan Hastalıkları 

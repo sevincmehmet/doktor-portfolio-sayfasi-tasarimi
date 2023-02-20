@@ -127,11 +127,10 @@ const Home = () => {
                     </svg>
                   </div>
                   <div className="blurb-title text-center">
-                    <h3>Outpatient Medicine</h3>
+                    <h3>Ayakta Tedavi Hizmeti</h3>
                   </div>
                   <div className="blurb-text text-center">
-                    Our medical clinic provides quality care for the entire
-                    family while maintaining a personable atmosphere.
+                  Tıbbi kliniğimizde şikayetlerinize yönelik en uygun çözümü sunabilmek için hizmet vermekteyiz. 
                   </div>
                 </article>
               </div>
@@ -156,10 +155,11 @@ const Home = () => {
                     </svg>
                   </div>
                   <div className="blurb-title text-center">
-                    <h3>Pediatric Services</h3>
+                    <h3>Çocuk Sağlığı Hizmetleri</h3>
                   </div>
                   <div className="blurb-text text-center">
-                    Make sure your child is hitting all their benchmarks while growing up, and getting properly immunized.
+                  Çocuğunuz ile ilgili hastalık ve genel bakım gibi tüm sağlık işlemlerine yönelik pediyatrik hizmeti sunmaktayız. 
+
                   </div>
                 </article>
               </div>
@@ -178,10 +178,10 @@ const Home = () => {
                     </svg>
                   </div>
                   <div className="blurb-title text-center">
-                    <h3>Urgent Care Services</h3>
+                    <h3>Acil Durum Hizmetleri</h3>
                   </div>
                   <div className="blurb-text text-center">
-                    Quick, convenient care for non-emergency illnesses and injuries.
+                  Acil hastalıklar ve yaralanma durumları için uygun bakım hizmetleri sunulmaktadır                  
                   </div>
                 </article>
               </div>

@@ -12,11 +12,10 @@ const Reviews = () => {
                                 className="home-title text-center"
                                 style={{ fontSize: "31.5px" }}
                             >
-                                What People Say
+                                İnsanlar Ne Düşünüyor?
                             </h2>
                             <div className="blurb-text text-center">
-                                Take a look at the recent testimonials submitted by our patients
-                            </div>
+                            İnsanların hizmetlerim hakkında düşündükleri yorumları inceleyiniz.                             </div>
                             <div className="row row-30 text-start">
                                 <div className="col-sm-6">
                                     
