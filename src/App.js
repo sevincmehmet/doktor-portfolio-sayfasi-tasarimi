@@ -42,36 +42,44 @@ const App = () => {
   return (<>
     <div style={{ position: 'relative' }}>
 
-    <div className="App">
-      <Navbar />
-
-      <section id="home"> <Home /> </section>
-      <section id="about"><About /></section>
-      <section id="services"><Services /></section>
-      <section id="reviews"><Reviews /></section>
-      <section id="contacts"><Contacts /></section>
-      <section className="maps-container">
-        {isLoaded ? <GoogleMap
-          mapContainerStyle={containerStyle}
-          center={center}
-          zoom={7}
-          onLoad={onLoad}
-          onUnmount={onUnmount}
+      <div className="App">
+        <Navbar />
+        <div
+          data-mdb-spy="scroll"
+          data-mdb-target="#scrollspy1"
+          data-mdb-offset="100px"
+          className="scrollspy-example"
         >
-          <></>
 
-        </GoogleMap>
-          : <>
-          </>
-        }
-      </section>
+          <section id="home"><Home /> </section>
+          <section id="about"><About /></section>
+          <section id="services"><Services /></section>
+          <section id="reviews"><Reviews /></section>
+          <section id="contacts"><Contacts /></section>
+          <section className="maps-container">
+            {isLoaded ? <GoogleMap
+              mapContainerStyle={containerStyle}
+              center={center}
+              zoom={7}
+              onLoad={onLoad}
+              onUnmount={onUnmount}
+            >
+              <></>
+
+            </GoogleMap>
+              : <>
+              </>
+            }
+          </section>
+        </div>
+      </div>
+
+
+
     </div>
 
 
-
-  </div>
-
-
-</>)}
+  </>)
+}
 
 export default App;

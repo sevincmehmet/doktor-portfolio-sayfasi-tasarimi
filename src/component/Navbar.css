@@ -215,7 +215,7 @@ top: 0px;
         top: calc(50% - 27px);
     }
     .logo img {
-        width: 70px;
+        height: 70px;
     }
     .navActive{
         height: 80px;

@@ -16,7 +16,6 @@ const Home = () => {
             className="col-auto col-sm-8 col-md-6 col-lg-5 rounded float-left img-fluid"
           >
             <img
-             className="rounded"
               id="home-img"
               src={home_image}
             />
@@ -31,7 +30,7 @@ const Home = () => {
             </h3>
             <div className="telephone-div">
               <div className="telephone-item">
-                <img className="rounded" src={ImagePaths.telephoneIcon} width={28} height={28} />
+                <img src={ImagePaths.telephoneIcon} width={28} height={28} />
               </div>
               <div className="telephone-body">
                 <a href="tel:0346-399-01-66">+90 (0346) 399 0166</a>

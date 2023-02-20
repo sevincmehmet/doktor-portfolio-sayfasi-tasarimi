@@ -94,7 +94,7 @@ function Navbars() {
                         >
 
                             <Offcanvas.Body>
-                                <Nav className="text-nav justify-content-end flex-grow-1">
+                                <Nav id="scrollspy1" className="text-nav justify-content-end flex-grow-1 menu-sidebar">
                                     <ul>
                                         <li >
                                             <Link activeClass="active" className={defActive ? "active nav-link" : "nav-link"} spy to="home" onClick={() => { setSideBarActive(!sideBarActive); }}>

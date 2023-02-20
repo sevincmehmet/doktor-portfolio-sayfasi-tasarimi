@@ -36,17 +36,17 @@ const About = () => {
                     <li className="list-title fs-5 fw-bold mt-4 mb-2">
                       İlgi Alanları
                     </li>
-                    <li className="list-item">
+                    <li className="list-item blurb-text">
                     Çocuklarda Gelişme Bozuklukları 
                     </li>
-                    <li className="list-item">
+                    <li className="list-item blurb-text">
                     Ergenlikte Büyüme Gelişme 
                     </li>
-                    <li className="list-item">
+                    <li className="list-item blurb-text">
                     Yenidoğan Hastalıkları 
 
                     </li>
-                    <li className="list-item">
+                    <li className="list-item blurb-text">
                     Yenidoğan Takibi 
                     </li>
                   </ul>

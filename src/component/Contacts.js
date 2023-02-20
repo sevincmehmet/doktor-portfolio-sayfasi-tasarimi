@@ -127,7 +127,7 @@ const Contacts = () => {
                                             </div>
                                             <div className="custom-control custom-checkbox"></div>
                                             <div className="rd-form-btn text-start">
-                                                <button className="btn btn-lg btn-block" type="submit">
+                                                <button className="btn btn-lg btn-block" type="button">
                                                 Randevu Al
                                                 </button>
                                             </div>
