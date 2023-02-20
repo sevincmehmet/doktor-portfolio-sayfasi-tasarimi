@@ -80,7 +80,7 @@ const Contacts = () => {
                                         >
                                             <div className="form-wrap">
                                                 <label style={{paddingTop: "0"}} className="form-label" htmlFor="input-name">
-                                                    Your name*
+                                                Adınız/Soyadınız *
                                                 </label>
                                                 <div className="form-group">
                                                     <input
@@ -96,7 +96,7 @@ const Contacts = () => {
                                             </div>
                                             <div className="form-wrap">
                                                 <label className="form-label" htmlFor="input-phone">
-                                                    Your phone*
+                                                İletişim Numaranız *
                                                 </label>
                                                 <div className="form-group">
                                                     <input
@@ -112,7 +112,7 @@ const Contacts = () => {
                                             </div>
                                             <div className="form-wrap">
                                                 <label className="form-label" htmlFor="input-message">
-                                                    Your message*
+                                                Mesajınız *
                                                 </label>
                                                 <div className="form-group">
                                                     <textarea

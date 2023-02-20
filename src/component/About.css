@@ -44,6 +44,10 @@ ol, ul, dl {
     font-weight: 400;
     font-size: 14px;
 }
+.list-title {
+    color: #177ee5;
+    font-weight: 600;
+}
 
 .about-link {
     font-weight: bold;

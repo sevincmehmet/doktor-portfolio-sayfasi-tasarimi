@@ -25,7 +25,7 @@ const Home = () => {
             className="col-auto col-sm-8 col-md-6  col-xxl-5"
           >
             <h1 className="home-title display-1">Uzm. Dr. Osman Gönülal</h1>
-            <h3 className="text-primary home-link">
+            <h3 style={{color:"#177ee5"}} className="text-primary home-link">
               Yenidoğan, Bebek ve Çocuk Sağlığı Hastalıkları Uzmanı       
             </h3>
             <div className="telephone-div">
@@ -51,7 +51,7 @@ const Home = () => {
       {/* Alt taraf */}
       <div className="container mt-4">
         <h2 className="home-title text-center" style={{ fontSize: "31.5px" }}>
-          How can I Help You?
+        Nasıl Yardımcı Olabilirim?
         </h2>
         <br />
         <div className="row row-30">

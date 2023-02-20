@@ -65,7 +65,7 @@ function Navbars() {
                     <Link id="dotMake" className="btn btn-primary" activeClass="active" spy to="contacts" onClick={() => {
                         setDotClick(!dotClick);
                     }}>
-                        Make appointment
+                        Randevu Al
                     </Link>
                 </div>
                 <Navbar
@@ -97,32 +97,32 @@ function Navbars() {
                                     <ul>
                                         <li >
                                             <Link activeClass="active" className={defActive ? "active nav-link" : "nav-link"} spy to="home" onClick={() => { setSideBarActive(!sideBarActive); }}>
-                                                Home
+                                                Anasayfa
                                             </Link>
                                         </li>
                                         <li>
                                             <Link activeClass="active" className="nav-link" spy to="about" onClick={() => { setSideBarActive(!sideBarActive); }}>
-                                                About
+                                                Hakkımda
                                             </Link>
                                         </li>
                                         <li>
                                             <Link activeClass="active" className="nav-link" spy to="services" onClick={() => { setSideBarActive(!sideBarActive); }}>
-                                                Services
+                                                Hizmetlerim
                                             </Link>
                                         </li>
                                         <li>
                                             <Link activeClass="active" className="nav-link" spy to="reviews" onClick={() => { setSideBarActive(!sideBarActive); }}>
-                                                Reviews
+                                                Yorumlar
                                             </Link>
                                         </li>
                                         <li>
                                             <Link activeClass="active" className="nav-link" spy to="contacts" onClick={() => { setSideBarActive(!sideBarActive); }}>
-                                                Contacts
+                                                İletişim
                                             </Link>
                                         </li>
                                         <li>
                                             <Link style={{ color: "white" }} activeClass="active" id="make" className="nav-link btn btn-primary" onClick={() => { setSideBarActive(!sideBarActive); }} spy to="contacts">
-                                                Make appointment
+                                                Randevu Al
                                             </Link>
                                         </li>
                                     </ul>
