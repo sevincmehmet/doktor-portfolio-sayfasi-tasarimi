@@ -46,10 +46,14 @@
      padding: 35px 35px;
     background-color: #fff;
 }
+
 .form-label {
     margin-bottom: 0.5rem;
+    padding-top: 1.2rem;
     font-size: 12.25px;
 }
+
+
 input {
     border-bottom:2px solid var(--black-color) ;
 }

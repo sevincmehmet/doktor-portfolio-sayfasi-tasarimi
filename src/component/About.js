@@ -23,19 +23,13 @@ const About = () => {
                 </div>
                 <div className="col-sm-7 col-md-6  col-xxl-6">
                   <h2 className="about-title">
-                    About Dr. Courtney Williams, Family Doctor
+                  Uzm. Dr. Osman GÖNÜLAL Hakkında
                   </h2>
                   <h3 className="text-primary about-link">
-                    Dr. Courtney Williams, F.D., is one of the top family
-                    medicine practitioners in the United States.
+                  Uzm. Dr.Osman GÖNÜLAL, Tıp eğitimini İstanbul Üniversitesi'nde tamamlayarak tıp doktoru unvanı almıştır. İhtisasını ise İstanbul Şişli Etfal Eğitim ve Araştırma Hastanesi Çocuk Sağlığı ve Hastalıkları Bölümü'nde yapmış olup Çocuk Sağlığı ve Hastalıkları Uzmanı olmuştur.
                   </h3>
                   <p className="blurb-text about-p">
-                    As one of the most experienced family doctors in the area,
-                    Dr. Courtney Williams, F.D., has experience in emergency
-                    medicine and physical therapy. Her professional background
-                    allows her to deliver the utmost level of health care for
-                    her patients. You can expect high-quality approach from Dr.
-                    Williams.
+                  Bebek ve Çocuk Sağlığı Hastalıkları Uzmanıyım. Tıpkı YouTube kanalımda yaptığım gibi bu sitede de BEBEK VE ÇOCUK SAĞLIĞI VE HASTALIKLARI hakkında bilmeniz gereken her şeyi bulacaksınız! Hamilelik döneminden, yeni doğan dönemine, çocuğunuzun yaşamı boyunca ihtiyaç duyacağınız bilgiler burada olacak. Örneğin, bebeklerde sarılık, konak, ishal, ateş, idrar yolu enfeksiyonu, isilik, diş çıkarma, gaz sancısı, COVID – 19, pamukçuk, gaz yapmayan yiyecekler, gece uykusu, gündüz uykusu, tuvalet eğitimi. Ayrıca anneler için hamilelik, sağlıklı yaşam, diyet, obezite, aşılar, babalar için de çocuk eğitimi, babalık sendromu gibi konularda en doğru bilgileri Sağlık Bakanlığı ve Amerikan Pediatri Akademisi gibi ciddi kaynaklar ışığında paylaşmaya çalışacağım. 
                   </p>
                   <ul className="list list-marked-2 fw-medium text-dark">
                     <li className="list-item">

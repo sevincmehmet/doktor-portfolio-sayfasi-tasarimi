@@ -10,17 +10,16 @@ const Contacts = () => {
                         <div className="container">
                             <div className="row row-30 justify-content-center">
                                 {/* ********************Ekranın Sol Tarafı ********************************/}
-                                <div className="col-sm-11 col-md-6" >
+                                <div className="col-sm-11 col-md-6">
                                     <h2 className="contacts-title">
-                                        Sign Up for an Appointment with the Doctor Today!
+                                        Randevunuzu Ücretsiz Olarak Oluşturabilirsiniz
                                     </h2>
                                     <p className="blurb-text" style={{ padding: " 0 0 15px 0" }}>
-                                        Take some time to fill out the form and get an appointment
-                                        with an experienced family doctor.
+                                        İster dahili telefon numaramızdan bize ulaşarak isterseniz de randevu formunu eksiksiz bir biçimde doldurarak uygun randevu günleri hakkında bilgi alabilirsiniz.
                                     </p>
                                     <div className="divider"></div>
                                     <h6 className="contact-adress">
-                                        2965 Pine Garden Ln. Nelson, GA 30107
+                                        Kardeşler Mahallesi 51/4 Sokak Kapı No:3C Merkez/Sivas
                                     </h6>
 
                                     <div className="telephone-div">
@@ -32,22 +31,25 @@ const Contacts = () => {
                                             />
                                         </div>
                                         <div className="telephone-body">
-                                        <a href="tel:0346-399-01-66">+90 (0346) 399 0166</a>
+                                            <a href="tel:0346-399-01-66">+90 (0346) 399 0166</a>
                                             <div className="telephone-text">
-                                                Call Now and Get a FREE Consultation
+                                                Randevu ve Online Danışmanlık
                                             </div>
                                         </div>
                                     </div>
                                     <ul className="list blurb-text">
                                         <li className="list-item">
-                                            Monday – Friday: 07:00am – 10:00pm
+                                            Çalışma Günleri
                                         </li>
                                         <li className="list-item">
-                                            Saturday – Sunday: 08:00am – 08:00pm
+                                            Pazartesi - Cuma: 09:00 - 18:00
+                                        </li>
+                                        <li className="list-item">
+                                            Cumartesi: 09:00 - 16:00
                                         </li>
                                     </ul>
-                                    <a className="link" href="mailto:#">
-                                        info@demolink.org
+                                    <a className="link" href="mailto:                                        md.gonulal@gmail.com">
+                                        md.gonulal@gmail.com
                                     </a>
                                     <div className="social">
                                         <a className="icon icon-md " href="#">
@@ -67,7 +69,7 @@ const Contacts = () => {
                                 {/**********************Ekranın Sağ Tarafı*********************************/}
                                 <div className="col-sm-11 col-md-6">
                                     <div className="form-box">
-                                        <h2 className="contacts-title">Make an Appointment</h2>
+                                        <h2 className="contacts-title">Randevu Formu </h2>
                                         <form
                                             className="rd-form rd-mailform"
                                             data-form-output="contact-form"
@@ -77,7 +79,7 @@ const Contacts = () => {
                                             noValidate="novalidate"
                                         >
                                             <div className="form-wrap">
-                                                <label className="form-label" htmlFor="input-name">
+                                                <label style={{paddingTop: "0"}} className="form-label" htmlFor="input-name">
                                                     Your name*
                                                 </label>
                                                 <div className="form-group">
@@ -123,11 +125,10 @@ const Contacts = () => {
                                                     <span className="form-validation"></span>
                                                 </div>
                                             </div>
-                                            <div className="custom-control custom-checkbox">
-                                            </div>
+                                            <div className="custom-control custom-checkbox"></div>
                                             <div className="rd-form-btn text-start">
                                                 <button className="btn btn-lg btn-block" type="submit">
-                                                    Submit
+                                                Randevu Al
                                                 </button>
                                             </div>
                                         </form>
@@ -135,10 +136,6 @@ const Contacts = () => {
                                             className="form-output snackbar snackbar-primary"
                                             id="contact-form"
                                         ></div>
-                                        
-
-                                        
-
                                     </div>
                                 </div>
                             </div>

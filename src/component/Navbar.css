@@ -228,7 +228,7 @@ top: 0px;
     }
     .offcanvas{
         box-shadow: rgb(130 140 165 / 10%) 0px 2px 0px 0px inset;
-        background-color: #f7f7f7;
+        background-color: #fff;
     }
     .offcanvas.offcanvas-end {
         width: 300px;
