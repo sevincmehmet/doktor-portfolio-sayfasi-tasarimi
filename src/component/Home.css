@@ -142,3 +142,9 @@
         width: 280px;
     }
 }
+
+.space {
+    height: 100px;
+    width: 100%;
+    background-color: var(--second-color);
+}

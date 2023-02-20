@@ -6,7 +6,7 @@ import "./Home.css";
 const Home = () => {
   return (
     <>
-      <div className="container">
+      <div className="container pb-5">
         <div
           className="row row-30 justify-content-center justify-content-md-between flex-md-row-reverse justify-content-xxl-center
 "
@@ -48,8 +48,9 @@ const Home = () => {
         </div>
       </div>
 
+    <div className="space"></div>
       {/* Alt taraf */}
-      <div className="container mt-4">
+      <div className="container mt-4 pt-5">
         <h2 className="home-title text-center" style={{ fontSize: "31.5px" }}>
         Sağlık Hizmeti Alanlarım        
         </h2>
