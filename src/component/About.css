@@ -46,9 +46,10 @@ ol, ul, dl {
 }
 
 .about-link {
-    font-weight: 400;
+    font-weight: bold;
     margin: 12.86px 0 0 0 ;
     font-size: 21px;
+    line-height: 1.6;
 } 
 .about-p {
     margin: 23.88px 0 0;

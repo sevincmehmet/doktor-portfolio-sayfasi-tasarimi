@@ -24,7 +24,7 @@ const Home = () => {
             id="write-container"
             className="col-auto col-sm-8 col-md-6  col-xxl-5"
           >
-            <h1 className="home-title display-1">UZM. DR. OSMAN GÖNÜLAL</h1>
+            <h1 className="home-title display-1">Uzm. Dr. Osman Gönülal</h1>
             <h3 className="text-primary home-link">
               Yenidoğan, Bebek ve Çocuk Sağlığı Hastalıkları Uzmanı       
             </h3>
@@ -40,9 +40,9 @@ const Home = () => {
               </div>
             </div>
             <h5 className="telephone-adress">
-              2965 Pine Garden Ln.
+            Kardeşler Mahallesi 51/4 
               <br />
-              Nelson, GA 30107
+              Sokak Kapı No:3C Merkez/Sivas
             </h5>
           </div>
         </div>

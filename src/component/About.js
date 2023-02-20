@@ -25,11 +25,11 @@ const About = () => {
                   <h2 className="about-title">
                   Uzm. Dr. Osman GÖNÜLAL Hakkında
                   </h2>
-                  <h3 className="text-primary about-link">
-                  Uzm. Dr.Osman GÖNÜLAL, Tıp eğitimini İstanbul Üniversitesi'nde tamamlayarak tıp doktoru unvanı almıştır. İhtisasını ise İstanbul Şişli Etfal Eğitim ve Araştırma Hastanesi Çocuk Sağlığı ve Hastalıkları Bölümü'nde yapmış olup Çocuk Sağlığı ve Hastalıkları Uzmanı olmuştur.
+                  <h3 style={{color:"#177ee5"}} className="about-link">
+                  Tıp eğitimini İstanbul Üniversitesi'nde tamamlayarak tıp doktoru unvanı almıştır.
                   </h3>
-                  <p className="blurb-text about-p">
-                  Bebek ve Çocuk Sağlığı Hastalıkları Uzmanıyım. Tıpkı YouTube kanalımda yaptığım gibi bu sitede de BEBEK VE ÇOCUK SAĞLIĞI VE HASTALIKLARI hakkında bilmeniz gereken her şeyi bulacaksınız! Hamilelik döneminden, yeni doğan dönemine, çocuğunuzun yaşamı boyunca ihtiyaç duyacağınız bilgiler burada olacak. Örneğin, bebeklerde sarılık, konak, ishal, ateş, idrar yolu enfeksiyonu, isilik, diş çıkarma, gaz sancısı, COVID – 19, pamukçuk, gaz yapmayan yiyecekler, gece uykusu, gündüz uykusu, tuvalet eğitimi. Ayrıca anneler için hamilelik, sağlıklı yaşam, diyet, obezite, aşılar, babalar için de çocuk eğitimi, babalık sendromu gibi konularda en doğru bilgileri Sağlık Bakanlığı ve Amerikan Pediatri Akademisi gibi ciddi kaynaklar ışığında paylaşmaya çalışacağım. 
+                  <p className="blurb-text about-p lh-base">
+                  Bebek ve Çocuk Sağlığı Hastalıkları Uzmanıyım. Tıpkı YouTube kanalımda yaptığım gibi bu sitede de BEBEK VE ÇOCUK SAĞLIĞI VE HASTALIKLARI hakkında bilmeniz gereken her şeyi bulacaksınız! Hamilelik döneminden, yeni doğan dönemine, çocuğunuzun yaşamı boyunca ihtiyaç duyacağınız bilgiler burada olacak. 
                   </p>
                   <ul className="list list-marked-2 fw-medium text-dark">
                     <li className="list-item">

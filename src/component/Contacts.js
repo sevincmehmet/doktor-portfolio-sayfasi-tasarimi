@@ -38,7 +38,7 @@ const Contacts = () => {
                                         </div>
                                     </div>
                                     <ul className="list blurb-text">
-                                        <li className="list-item">
+                                        <li style={{fontWeight:"bold"}} className="list-item">
                                             Çalışma Günleri
                                         </li>
                                         <li className="list-item">
