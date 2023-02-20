@@ -87,38 +87,37 @@ function Navbars() {
                             aria-labelledby={`offcanvasNavbarLabel-expand-${"xl"}`}
                             placement="end"
                         >
-
                             
                             <Offcanvas.Body>
                                 <Nav className="text-nav justify-content-end flex-grow-1">
                                     <ul>
                                         <li >
-                                            <Link activeClass="active" spy to="home" onClick={()=> {setSideBarActive(!sideBarActive);}}>
+                                            <Link  activeClass="active" className="nav-link" spy to="home" onClick={()=> {setSideBarActive(!sideBarActive);}}>
                                                 Home
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link activeClass="active" spy to="about"onClick={()=> {setSideBarActive(!sideBarActive);}}>
+                                            <Link  activeClass="active" className="nav-link" spy to="about"onClick={()=> {setSideBarActive(!sideBarActive);}}>
                                                 About
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link activeClass="active" spy to="services"onClick={()=> {setSideBarActive(!sideBarActive);}}>
+                                            <Link  activeClass="active" className="nav-link" spy to="services"onClick={()=> {setSideBarActive(!sideBarActive);}}>
                                                 Services
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link activeClass="active" spy to="reviews"onClick={()=> {setSideBarActive(!sideBarActive);}}>
+                                            <Link  activeClass="active" className="nav-link" spy to="reviews"onClick={()=> {setSideBarActive(!sideBarActive);}}>
                                                 Reviews
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link activeClass="active" spy to="contacts"onClick={()=> {setSideBarActive(!sideBarActive);}}>
+                                            <Link  activeClass="active" className="nav-link" spy to="contacts"onClick={()=> {setSideBarActive(!sideBarActive);}}>
                                                 Contacts
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link id="make" className="btn btn-primary" activeClass="active"onClick={()=> {setSideBarActive(!sideBarActive);}} spy to="contacts">
+                                            <Link style={{color: "white"}} activeClass="active"  id="make" className="nav-link btn btn-primary"onClick={()=> {setSideBarActive(!sideBarActive);}} spy to="contacts">
                                                 Make appointment
                                             </Link>
                                         </li>

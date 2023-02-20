@@ -6,10 +6,10 @@
     position: -webkit-sticky;
     position: sticky;
     top: 0px;   
-    z-index: 2;
-    height: 65px;
-    min-height: 60px;
     z-index: 99999;
+    height: 90px;
+    min-height: 60px;
+    z-index: 9999999;
     background-color: var(--second-color);  
     width: 100%;
     transition: height 0.2s, box-shadow 0.2s;
@@ -23,7 +23,7 @@
     position: -webkit-sticky;
     position: sticky;
     top: 0px;   
-    z-index: 2;
+    z-index: 9999d;
     height: 104px;
     min-height: 70px;
     z-index: 999;
@@ -54,9 +54,9 @@
 .navbar-spaces {
     width: 252px;
 }
-.active {
+/* .active {
     font-weight: bold;
-}
+} */
 
 Nav ul {
     display: flex;
@@ -82,17 +82,18 @@ Nav li:last-child{
 Nav li a{
     font-size: 14px;
     font-family: 'Epilogue', sans-serif;
-    font-weight: 300;
-    color: var(--threed-color);
+    font-weight: 400;
+    /* color: var(--threed-color); */
     height: auto;
 }
-Navli:hover {
+/* Navli:hover {
     text-decoration: underline;
-}
+} */
 a {
     color: var(--black-color);
     text-decoration:none;
 }
+
 .position-before {
     position: sticky;
     top: 15px;
@@ -106,7 +107,8 @@ a {
 #make {
     position: relative;
     bottom: 1rem;
-    padding: 0.3rem 0.9 rem;
+    padding: 0.3rem 0.9rem;
+    margin-left: 0.9rem;
 }
 button:focus:not(:focus-visible) {
     outline: 0;
@@ -147,27 +149,25 @@ button:focus:not(:focus-visible) {
 .setting-icon {
     display: flex;
     position: absolute;
-    top: 10px;
+    top: calc(50% - 28px);
     right: 3rem;
     z-index: 99999;
     flex-direction: column;
-    height: 45px;
+    height: 54px;
     width: 10px;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: var(--black-color);
     cursor: pointer;
     transform: 0.2s ease;
     align-items: center;
     transition: 0.3s ease;
-
     transform: rotateZ(0deg);
-
 }
 .closeButton {
     transform: rotateZ(45deg);
     color: var(--black-color);
-    font-size: 1rem;
+    font-size: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -180,11 +180,11 @@ button:focus:not(:focus-visible) {
 }
 #setting-icon-item-0 {
     position: absolute;
-    top: -5px;
+    top: -7px;
 }
 #setting-icon-item-1 {
 position: absolute;
-top: 5px;
+top: 7px;
 }
 #setting-icon-item-2 {
 position: absolute;
@@ -193,7 +193,16 @@ top: 0px;
 .menu-icon {
     cursor: pointer;
 }
-
+.nav-link {
+    color: var(--black-color);
+}
+.nav-link:hover,
+.active:hover {
+    color: var(--threed-color);
+}
+.navbar-nav .nav-link.active {
+    color: var(--threed-color);
+}
 
 @media (max-width: 1199.98px) {
     nav{
@@ -202,11 +211,14 @@ top: 0px;
     .logo{
         display: flex;
         position: absolute;
-        left: calc(50% - 65px);
-        top: 19px;
+        left: calc(50% - 55px);
+        top: calc(50% - 9.4px);
     }
     .logo img {
         width: 110px;
+    }
+    .navActive{
+        height: 80px;
     }
     #menu-icon-div{
         position: absolute;
@@ -215,11 +227,12 @@ top: 0px;
         justify-content: flex-start;
     }
     .offcanvas{
+        box-shadow: rgb(130 140 165 / 10%) 0px 2px 0px 0px inset;
         background-color: #f7f7f7;
     }
     .offcanvas.offcanvas-end {
         width: 300px;
-        top: 65px;
+        top: 79.6px;
         left: 0;
         transform: translateX(-300px);
     }
@@ -229,22 +242,29 @@ top: 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        z-index: 999;
+        
     }
     .offcanvas ul li { 
         list-style: none;
-        padding: 14px 30px;
         color: var(--black-color);
         font-weight: 400;
+        border-bottom: 1px solid #e5e5e5 ;
     }
     .offcanvas ul li a {
         font-size: 20.44px;
         font-weight: 400;
-        color: var(--threed-color);
+        /* color: var(--threed-color); */
+        width: 100%;
+        padding: 14px 30px;
+        
     }
     .offcanvas-body {
         padding: 0;
         overflow-y: auto;
         flex-grow: 1;
+        z-index: 99;
+        box-shadow: rgb(130 140 165 / 10%) 0px 0px 12px;
     }
     .offcanvas-backdrop {
         display: none;
@@ -254,5 +274,8 @@ top: 0px;
     } */
     #make {
         display: none;
+    }
+    .offcanvas ul li:last-child{
+        visibility: hidden;
     }
 }

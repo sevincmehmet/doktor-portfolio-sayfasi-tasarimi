@@ -1,3 +1,6 @@
+.reviews-container {
+
+}
 .quote {
     box-sizing: border-box;
     display: block;
@@ -6,10 +9,10 @@
     /* margin-inline-start: 50px;
     margin-inline-end:50px; */
     border: 1px solid #e1e7ed;;
-}
-.quote {
     padding: 1.70625rem 1.6625rem;
 }
+
+
 .quote-author {
     color: #828CA5;
     margin-bottom: 18.75px;

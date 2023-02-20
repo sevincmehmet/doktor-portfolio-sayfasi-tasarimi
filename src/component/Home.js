@@ -1,3 +1,7 @@
+import home_image from "./assets/homeImg.png"
+import about_image from "./assets/aboutImg.jpeg";
+
+
 import ImagePaths from "./assets/images/ImagePaths";
 import "./Home.css";
 const Home = () => {
@@ -14,7 +18,7 @@ const Home = () => {
           >
             <img
               id="home-img"
-              src="https://ld-wt73.template-help.com/tf/medox/images/index-01-490x360.jpg"
+              src={home_image}
             />
           </div>
           <div
@@ -30,7 +34,7 @@ const Home = () => {
                 <img src={ImagePaths.telephoneIcon} width={28} height={28} />
               </div>
               <div className="telephone-body">
-                <a href="tel:+">+1 (800) 925-63-24</a>
+                <a href="tel:0346-399-01-66">+90 (0346) 399 0166</a>
                 <div className="telephone-text">
                   Call Now and Get a FREE Consultation
                 </div>
@@ -54,7 +58,7 @@ const Home = () => {
         <div className="row row-30">
           <div className="offset-xxl-1 col-xxl-10 offset-xxl-1 ">
             <div className="row">
-              <div className="col-sm-6 col-md-4 mb-4">
+              <div className="home-item col-sm-6 col-md-4 mb-4">
                 <article className="blurb blurb-hover">
                   <div className="icon blurb-icon d-flex justify-content-center">
                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
@@ -133,7 +137,7 @@ const Home = () => {
                 </article>
               </div>
           
-              <div className="col-sm-6 col-md-4 mb-4">
+              <div className="home-item col-sm-6 col-md-4 mb-4">
                 <article className="blurb blurb-hover">
                   <div className="icon blurb-icon d-flex justify-content-center">
                   <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
@@ -161,7 +165,7 @@ const Home = () => {
                 </article>
               </div>
           
-              <div className="col-sm-6 col-md-4 mb-4">
+              <div className="home-item col-sm-6 col-md-4">
                 <article className="blurb blurb-hover">
                   <div className="icon blurb-icon d-flex justify-content-center">
                   <svg width="64" height="64" viewBox="0 0 64 64" fill="none">

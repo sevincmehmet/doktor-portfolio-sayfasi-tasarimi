@@ -32,7 +32,7 @@ const Contacts = () => {
                                             />
                                         </div>
                                         <div className="telephone-body">
-                                            <a href="tel:+">+1 (800) 925-63-24</a>
+                                        <a href="tel:0346-399-01-66">+90 (0346) 399 0166</a>
                                             <div className="telephone-text">
                                                 Call Now and Get a FREE Consultation
                                             </div>

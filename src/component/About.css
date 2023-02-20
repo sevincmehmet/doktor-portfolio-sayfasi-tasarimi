@@ -38,7 +38,12 @@ ol, ul, dl {
     margin-top: 0;
     margin-bottom: 1rem;
 }
-
+.list li{
+    margin: 0 auto;
+    padding-bottom: 0px;
+    font-weight: 400;
+    font-size: 14px;
+}
 
 .about-link {
     font-weight: 400;
@@ -47,4 +52,15 @@ ol, ul, dl {
 } 
 .about-p {
     margin: 23.88px 0 0;
+}
+/* #about-img {
+    width: 320px;
+    padding: 0 1rem;
+} */
+
+@media (max-width: 1199.98px) {
+    .about-title {
+        font-size: 25px;
+    }
+
 }

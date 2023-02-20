@@ -1,4 +1,6 @@
-import about_image from "./assets/aboutImg.jpg";
+import about_image from "./assets/aboutImg.jpeg";
+import home_image from "./assets/homeImg.png"
+
 import "./About.css";
 
 const About = () => {
@@ -6,20 +8,20 @@ const About = () => {
     <>
       <div className="container">
         <div className="row">
-          <div className="col-xl-8 col-md-10 col-sm-12 m-auto">
+          <div className="col-xl-9 col-lg-11 col-md-12 col-sm-12 m-auto">
             <div className="container">
               <div className="row row-30 justify-content-center">
-                <div className="col-sm-6 col-md-4 col-lg-5 col-xl-5  col-xxl-6 rounded float-start mb-4">
-                  <div>
+                <div className="col-sm-5 col-md-6  col-xxl-6 rounded float-start mb-4">
+                  <div id="about-img">
                     <img
                       className="image"
                       src={about_image}
                       alt="kadın doktor resimi"
-                      width={316}
+                      
                     />
                   </div>
                 </div>
-                <div className="col-sm-6 col-md-8 col-lg-7 col-xl-7  col-xxl-6">
+                <div className="col-sm-7 col-md-6  col-xxl-6">
                   <h2 className="about-title">
                     About Dr. Courtney Williams, Family Doctor
                   </h2>

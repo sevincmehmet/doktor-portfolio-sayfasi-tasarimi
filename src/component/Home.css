@@ -57,6 +57,7 @@
     cursor: zoom-in;
     background-color: hsl(0, 0%, 90%);
     transition: background-color 300ms;
+    width: 400px;
 }
 #img-container {
     padding-bottom: 2rem;
@@ -78,6 +79,7 @@
     color: #828ca5;
     margin: 11.6px 0 0 0;
 }
+
   /* If the screen size is smaller than 1200px, set the font-size to 80px */
   @media (max-width: 1199.98px) {
     #write-container {
