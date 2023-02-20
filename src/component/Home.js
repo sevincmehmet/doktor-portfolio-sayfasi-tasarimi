@@ -16,6 +16,7 @@ const Home = () => {
             className="col-auto col-sm-8 col-md-6 col-lg-5 rounded float-left img-fluid"
           >
             <img
+             className="rounded"
               id="home-img"
               src={home_image}
             />
@@ -30,7 +31,7 @@ const Home = () => {
             </h3>
             <div className="telephone-div">
               <div className="telephone-item">
-                <img src={ImagePaths.telephoneIcon} width={28} height={28} />
+                <img className="rounded" src={ImagePaths.telephoneIcon} width={28} height={28} />
               </div>
               <div className="telephone-body">
                 <a href="tel:0346-399-01-66">+90 (0346) 399 0166</a>
@@ -51,7 +52,7 @@ const Home = () => {
       {/* Alt taraf */}
       <div className="container mt-4">
         <h2 className="home-title text-center" style={{ fontSize: "31.5px" }}>
-        Nasıl Yardımcı Olabilirim?
+        Sağlık Hizmeti Alanlarım        
         </h2>
         <br />
         <div className="row row-30">
@@ -127,7 +128,7 @@ const Home = () => {
                     </svg>
                   </div>
                   <div className="blurb-title text-center">
-                    <h3>Ayakta Tedavi Hizmeti</h3>
+                    <h3>Ayakta Tedavi Hizmetleri</h3>
                   </div>
                   <div className="blurb-text text-center">
                   Tıbbi kliniğimizde şikayetlerinize yönelik en uygun çözümü sunabilmek için hizmet vermekteyiz. 
@@ -158,7 +159,7 @@ const Home = () => {
                     <h3>Çocuk Sağlığı Hizmetleri</h3>
                   </div>
                   <div className="blurb-text text-center">
-                  Çocuğunuz ile ilgili hastalık ve genel bakım gibi tüm sağlık işlemlerine yönelik pediyatrik hizmeti sunmaktayız. 
+                  Çocuğunuz ile ilgili hastalık ve genel bakım gibi tüm sağlık işlemlerine yönelik pediyatrik hizmetleri sunulmaktadır. 
 
                   </div>
                 </article>

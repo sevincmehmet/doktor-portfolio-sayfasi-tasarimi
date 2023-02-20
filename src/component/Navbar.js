@@ -4,6 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "./assets/logo.png";
+import Logo from "./assets/site-logo.png"
 import { Link } from "react-scroll";
 import "./Navbar.css";
 import { useEffect, useState } from "react";
@@ -76,7 +77,7 @@ function Navbars() {
                     <Container fluid >
                         <Navbar.Brand href="#">
                             <div className="logo">
-                                <img src={logo} ></img>
+                                <img src={Logo} ></img>
                             </div>
                         </Navbar.Brand>
                         <div className="navbar-spaces"></div>
@@ -107,7 +108,7 @@ function Navbars() {
                                         </li>
                                         <li>
                                             <Link activeClass="active" className="nav-link" spy to="services" onClick={() => { setSideBarActive(!sideBarActive); }}>
-                                                Hizmetlerim
+                                            Sorularınız  
                                             </Link>
                                         </li>
                                         

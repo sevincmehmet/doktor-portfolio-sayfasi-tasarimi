@@ -50,7 +50,6 @@ const App = () => {
       <section id="services"><Services /></section>
       <section id="reviews"><Reviews /></section>
       <section id="contacts"><Contacts /></section>
-
       <section className="maps-container">
         {isLoaded ? <GoogleMap
           mapContainerStyle={containerStyle}

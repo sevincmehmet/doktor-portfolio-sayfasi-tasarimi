@@ -48,7 +48,7 @@
     top: 6px;
 }
 .logo img {
-    width: 130px;
+    height: 70px;
 }
 
 .navbar-spaces {
@@ -212,10 +212,10 @@ top: 0px;
         display: flex;
         position: absolute;
         left: calc(50% - 55px);
-        top: calc(50% - 9.4px);
+        top: calc(50% - 27px);
     }
     .logo img {
-        width: 110px;
+        width: 70px;
     }
     .navActive{
         height: 80px;
