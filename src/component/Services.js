@@ -13,10 +13,9 @@ const Services = () => {
                     <div className="col-xxl-10 col-xl-11 col-md-11 col-sm-12 m-auto">
                         <div className="container">
                             <h2 className="services-title">
-                                I Offer a Whole Range of
+                            Sorular ve Cevaplarla 
                                 <br className="d-none d-md-inline" />
-                                Medical Services
-                            </h2>
+                                Medikal Hizmetler                            </h2>
                             <br />
                             <Accordion defaultActiveKey="0">
                                 <Accordion.Item eventKey="0">

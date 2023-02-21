@@ -39,7 +39,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <h5 className="telephone-adress">
+            <h5 className="telephone-adress lh-base">
             Kardeşler Mahallesi 51/4 
               <br />
               Sokak Kapı No:3C Merkez/Sivas
@@ -52,7 +52,7 @@ const Home = () => {
       {/* Alt taraf */}
       <div className="container pt-5">
         <h2 className="home-title text-center" style={{ fontSize: "31.5px" }}>
-        Sağlık Hizmeti Alanlarım        
+        Sağlık Hizmetlerim        
         </h2>
         <br />
         <div className="row row-30">
@@ -128,7 +128,7 @@ const Home = () => {
                     </svg>
                   </div>
                   <div className="blurb-title text-center">
-                    <h3>Ayakta Tedavi Hizmetleri</h3>
+                    <h3>Ayakta Tedavi</h3>
                   </div>
                   <div className="blurb-text text-center">
                   Tıbbi kliniğimizde şikayetlerinize yönelik en uygun çözümü sunabilmek için hizmet vermekteyiz. 
@@ -156,7 +156,7 @@ const Home = () => {
                     </svg>
                   </div>
                   <div className="blurb-title text-center">
-                    <h3>Çocuk Sağlığı Hizmetleri</h3>
+                    <h3>Çocuk Sağlığı</h3>
                   </div>
                   <div className="blurb-text text-center">
                   Çocuğunuz ile ilgili hastalık ve genel bakım gibi tüm sağlık işlemlerine yönelik pediyatrik hizmetleri sunulmaktadır. 
@@ -179,7 +179,7 @@ const Home = () => {
                     </svg>
                   </div>
                   <div className="blurb-title text-center">
-                    <h3>Acil Durum Hizmetleri</h3>
+                    <h3>Acil Durum</h3>
                   </div>
                   <div className="blurb-text text-center">
                   Acil hastalıklar ve yaralanma durumları için uygun bakım hizmetleri sunulmaktadır                  

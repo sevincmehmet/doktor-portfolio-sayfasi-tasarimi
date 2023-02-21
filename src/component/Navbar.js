@@ -12,7 +12,6 @@ function Navbars() {
     const [scroolActive, setScroolActive] = useState(false);
     const [dotClick, setDotClick] = useState(false)
     const [sideBarActive, setSideBarActive] = useState(false)
-    const [defActive, setDefActive] = useState(true);
     const [windowSize, setWindowSize] = useState([
         window.innerWidth,
         window.innerHeight,
@@ -39,7 +38,6 @@ function Navbars() {
         } else {
             setScroolActive(false)
         }
-    window.scrollY > 50 ? setDefActive(false): setDefActive(true)
     };
 
     window.addEventListener("scroll", scroolAnimate);
@@ -97,28 +95,42 @@ function Navbars() {
                                 <Nav id="scrollspy1" className="text-nav justify-content-end flex-grow-1 menu-sidebar">
                                     <ul>
                                         <li >
-                                            <Link activeClass="active" className={defActive ? "active nav-link" : "nav-link"} spy to="home" onClick={() => { setSideBarActive(!sideBarActive); }}>
+                                            <Link activeClass="active" className="nav-link" offset="-100" spy to="home" onClick={() => { setSideBarActive(!sideBarActive); }}
+                                            >
                                                 Anasayfa
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link activeClass="active" className="nav-link" spy to="about" onClick={() => { setSideBarActive(!sideBarActive); }}>
+                                            <Link 
+                                            activeClass="active"
+                                             className="nav-link"
+                                              spy
+                                              offset="-100"
+                                                to="about"
+                                                
+                                                 onClick={() => { setSideBarActive(!sideBarActive); }}
+                                                 
+                                                 >
                                                 Hakkımda
                                             </Link>
                                         </li>
+                                        
                                         <li>
-                                            <Link activeClass="active" className="nav-link" spy to="services" onClick={() => { setSideBarActive(!sideBarActive); }}>
+                                            <Link activeClass="active" className="nav-link" offset="-100" spy to="services" onClick={() => { setSideBarActive(!sideBarActive); }}
+                                            >
                                             Sorularınız  
                                             </Link>
                                         </li>
                                         
                                         <li>
-                                            <Link activeClass="active" className="nav-link" spy to="contacts" onClick={() => { setSideBarActive(!sideBarActive); }}>
+                                            <Link activeClass="active" className="nav-link" offset="-100" spy to="contacts" onClick={() => { setSideBarActive(!sideBarActive); }}
+                                            >
                                                 İletişim
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link style={{ color: "white" }} activeClass="active" id="make" className="nav-link btn btn-primary" onClick={() => { setSideBarActive(!sideBarActive); }} spy to="contacts">
+                                            <Link style={{ color: "white" }} activeClass="active" id="make" className="nav-link btn btn-primary" onClick={() => { setSideBarActive(!sideBarActive); }}
+                                             offset="-100" spy to="contacts">
                                                 Randevu Al
                                             </Link>
                                         </li>
