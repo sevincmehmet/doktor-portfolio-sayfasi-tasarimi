@@ -29,7 +29,7 @@ const About = () => {
                   Tıp eğitimini İstanbul Üniversitesi'nde tamamlayarak tıp doktoru unvanı almıştır.
                   </h3>
                   <p className="blurb-text about-p lh-base">
-                  Bebek ve Çocuk Sağlığı Hastalıkları Uzmanıyım. Tıpkı YouTube kanalımda yaptığım gibi bu sitede de <span className="fw-bold">BEBEK VE ÇOCUK SAĞLIĞI VE HASTALIKLARI</span> hakkında bilmeniz gereken her şeyi bulacaksınız! Hamilelik döneminden, yeni doğan dönemine, çocuğunuzun yaşamı boyunca ihtiyaç duyacağınız bilgiler burada olacak. 
+                  Bebek ve Çocuk Sağlığı Hastalıkları Uzmanıyım. Tıpkı YouTube kanalımda yaptığım gibi bu sitede de <span className="fw-bold">BEBEK VE ÇOCUK SAĞLIĞI HASTALIKLARI</span> hakkında bilmeniz gereken her şeyi bulacaksınız! Hamilelik döneminden, yeni doğan dönemine, çocuğunuzun yaşamı boyunca ihtiyaç duyacağınız bilgiler burada olacak. 
                   </p>
                   <ul className="list list-marked fw-medium text-dark">
                     
