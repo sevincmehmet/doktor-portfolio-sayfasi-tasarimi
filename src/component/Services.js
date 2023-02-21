@@ -3,9 +3,9 @@ import Accordion from "react-bootstrap/Accordion";
 
 import "./Services.css";
 const Services = () => {
-  
+
     const [accordionActive, setAccordionActive] = useState(false)
- 
+
     return (
         <>
             <div className="container">
@@ -13,13 +13,13 @@ const Services = () => {
                     <div className="col-xxl-10 col-xl-11 col-md-11 col-sm-12 m-auto">
                         <div className="container">
                             <h2 className="services-title">
-                            Sorular ve Cevaplarla 
-                                <br className="d-none d-md-inline" />
-                                Medikal Hizmetler                            </h2>
+                                Sorular ve Cevaplarla
+                                <br className="d-md-inline" />
+                                Medikal Hizmetler</h2>
                             <br />
                             <Accordion defaultActiveKey="0">
                                 <Accordion.Item eventKey="0">
-                                    <Accordion.Header onClick={() =>{setAccordionActive(!accordionActive)}} className={!accordionActive?"accordion-header":"border-b accordion-header"}>
+                                    <Accordion.Header onClick={() => { setAccordionActive(!accordionActive) }} className={!accordionActive ? "accordion-header" : "border-b accordion-header"}>
                                         <div className="h3"><span className="numberColor">01.</span> Doctor's Consultation</div>
                                     </Accordion.Header>
                                     <Accordion.Body>
@@ -72,7 +72,7 @@ const Services = () => {
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="1">
-                                    <Accordion.Header onClick={() =>{setAccordionActive(!accordionActive)}} className={!accordionActive?"accordion-header":"border-b accordion-header"}>
+                                    <Accordion.Header onClick={() => { setAccordionActive(!accordionActive) }} className={!accordionActive ? "accordion-header" : "border-b accordion-header"}>
                                         <div className="h3"><span className="numberColor">02.</span> Diagnostic Services</div>
                                     </Accordion.Header>
                                     <Accordion.Body>
@@ -125,7 +125,7 @@ const Services = () => {
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="2">
-                                    <Accordion.Header onClick={() =>{setAccordionActive(!accordionActive)}} className={!accordionActive?"accordion-header":"border-b accordion-header"}>
+                                    <Accordion.Header onClick={() => { setAccordionActive(!accordionActive) }} className={!accordionActive ? "accordion-header" : "border-b accordion-header"}>
                                         <div className={"h3"}><span className="numberColor">03.</span> Urgent Care</div>
                                     </Accordion.Header>
                                     <Accordion.Body>
@@ -178,7 +178,7 @@ const Services = () => {
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="3">
-                                    <Accordion.Header onClick={() =>{setAccordionActive(!accordionActive)}} className={!accordionActive?"accordion-header":"border-b accordion-header"}>
+                                    <Accordion.Header onClick={() => { setAccordionActive(!accordionActive) }} className={!accordionActive ? "accordion-header" : "border-b accordion-header"}>
                                         <div className={"h3"}><span className="numberColor">04.</span> Primary Care</div>
                                     </Accordion.Header>
                                     <Accordion.Body>
@@ -231,7 +231,7 @@ const Services = () => {
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="4">
-                                    <Accordion.Header onClick={() =>{setAccordionActive(!accordionActive)}} className={!accordionActive?"accordion-header":"border-b accordion-header"}>
+                                    <Accordion.Header onClick={() => { setAccordionActive(!accordionActive) }} className={!accordionActive ? "accordion-header" : "border-b accordion-header"}>
                                         <div className={"h3"}><span className="numberColor">05.</span> Annual Wellness Physical</div>
                                     </Accordion.Header>
                                     <Accordion.Body>
@@ -285,7 +285,7 @@ const Services = () => {
                                 </Accordion.Item>
                             </Accordion>
 
-                            
+
                             <div className="accordion"></div>
                         </div>
                     </div>
