@@ -1,9 +1,10 @@
 #write-container {
     margin-inline-start: 38px;
 }
-/* #home-img {
-    margin-left: 1rem ;
-} */
+#home-img {
+    transform: scale(0.8) ;
+    transform-origin: top right; 
+}
 
 .home-title {
     font-size: 56px;
@@ -121,7 +122,12 @@
         height: 17.5px;
         width: 17.5px;
     }
+    #home-img {
+        transform: scale(1) ;
+        transform-origin: center; 
+    }
   }
+
 
   /* @media (max-width: 413.98px) {
     #img-container {

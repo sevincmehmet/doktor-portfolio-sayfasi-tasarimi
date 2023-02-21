@@ -45,8 +45,8 @@ const App = () => {
     <div style={{ position: 'relative' }}>
 
       <div className="App">
+        <ScrollToTop/>
         <Navbar />
-        <div>
 
           <section  id="home"><Home /> </section>
           <section id="about"><About /></section>
@@ -68,7 +68,6 @@ const App = () => {
               </>
             }
           </section>
-        </div>
       </div>
 
 

@@ -4,8 +4,6 @@ import QuestionAnswer from "./QuestionAnswer";
 import Questions from "./Questions";
 import "./Services.css";
 const Services = () => {
-
-    const [accordionActive, setAccordionActive] = useState(false)
     const [questionsData, setQuestionsData] = useState(Questions)
 
     useEffect(() => {
@@ -37,22 +35,10 @@ const Services = () => {
                                         date={element.date}
                                         questions={element.questions}
                                         feedBack={element.feedBack}
-                                        accordionActive={accordionActive}
-                                        setAccordionActive={setAccordionActive}
                                     />
                                         </div>
                                     )
                                 })}
-
-                                 {/* <QuestionAnswer
-                                    id={questionsData[0].id}
-                                    title={questionsData[0].title}
-                                    date={questionsData[0].date}
-                                    questions={questionsData[0].questions}
-                                    feedBack={questionsData[0].feedBack}
-                                    accordionActive={accordionActive}
-                                    setAccordionActive={setAccordionActive}
-                                />  */}
                             </Accordion>
 
 
