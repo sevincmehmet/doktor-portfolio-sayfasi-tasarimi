@@ -8,6 +8,8 @@ import Services from "./component/Services"
 import Reviews from "./component/Reviews";
 import Contacts from "./component/Contacts";
 import ScrollToTop from "./component/ScrollToTop";
+import { Routes, Route, Link, NavLink } from "react-router-dom" 
+
 import "./App.css";
 
 const containerStyle = {
@@ -69,8 +71,6 @@ const App = () => {
             }
           </section>
       </div>
-
-
 
     </div>
 

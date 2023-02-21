@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import Accordion from "react-bootstrap/Accordion";
 import QuestionAnswer from "./QuestionAnswer";
 import Questions from "./Questions";
+import { Routes, Route, Link, NavLink } from "react-router-dom" 
+
 import "./Services.css";
 const Services = () => {
     const [questionsData, setQuestionsData] = useState(Questions)
@@ -19,7 +21,6 @@ const Services = () => {
                         <div className="container">
                             <h2 className="services-title">
                                 Sorular ve Cevaplarla
-                                <br className="d-md-inline" />
                                 Medikal Hizmetler</h2>
                             <br />
                             <Accordion defaultActiveKey="1">
@@ -40,7 +41,13 @@ const Services = () => {
                                     )
                                 })}
                             </Accordion>
-
+                                        <a
+                                                style={{ color: "white", marginLeft:"0"}}
+                                                id="allQuestionsBtn"
+                                                className="nav-link btn btn-primary"
+                                        >
+                                            Tüm Sorular
+                                        </a>
 
                             <div className="accordion"></div>
                         </div>

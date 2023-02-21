@@ -1,4 +1,4 @@
-import homeImg from "./assets/homeImg.png"
+import questionImg from "./assets/questionImg.jpg"
 import "./CommentBox.css"
 const CommentBox = (
     { date,
@@ -8,10 +8,10 @@ const CommentBox = (
         <>
             <div id="comment-box" className="quote  quote-5">
                 <div className="quote-author">
-                    <img className="quote-author-img" src={homeImg} alt="" width="64" height="64" />
+                    <img className="quote-author-img" src={questionImg} alt="" width="64" height="64" />
                     <div className="quote-author-body">
                         <div className="quote-author-name">
-                            <cite className="quote-cite">Dr. Osman Gönülal</cite>
+                            <cite className="quote-cite">Uzm. Dr. Osman Gönülal</cite>
                         </div>
                         <div className="date-statu">
                             <div className="quote-author">{date}</div>
