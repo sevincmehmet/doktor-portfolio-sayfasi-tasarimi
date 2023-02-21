@@ -7,6 +7,7 @@ import About from "./component/About";
 import Services from "./component/Services"
 import Reviews from "./component/Reviews";
 import Contacts from "./component/Contacts";
+import ScrollToTop from "./component/ScrollToTop";
 import "./App.css";
 
 const containerStyle = {
@@ -40,18 +41,14 @@ const App = () => {
 
 
   return (<>
+  
     <div style={{ position: 'relative' }}>
 
       <div className="App">
         <Navbar />
-        <div
-          data-mdb-spy="scroll"
-          data-mdb-target="#scrollspy1"
-          data-mdb-offset="100px"
-          className="scrollspy-example"
-        >
+        <div>
 
-          <section id="home"><Home /> </section>
+          <section  id="home"><Home /> </section>
           <section id="about"><About /></section>
           <section id="services"><Services /></section>
           <section id="reviews"><Reviews /></section>

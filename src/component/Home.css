@@ -50,14 +50,12 @@
     font-weight: 500;
 }
 #home-img {
-    position: relative;
-    right: 1rem;
     display: block;
     margin: auto;
     cursor: zoom-in;
     background-color: hsl(0, 0%, 90%);
     transition: background-color 300ms;
-    width: 400px;
+    width: 100%;
 }
 #img-container {
     padding-bottom: 2rem;
@@ -107,9 +105,9 @@
     .telephone-adress {
         font-size: 18.2px;      
     }
-    #home-img {    
+    /* #home-img {    
      width: 356px;
-    }
+    } */
   }
 
   @media (max-width: 991.98px) {
@@ -125,7 +123,7 @@
     }
   }
 
-  @media (max-width: 413.98px) {
+  /* @media (max-width: 413.98px) {
     #img-container {
         width: 370px;
         padding: 1rem;
@@ -141,7 +139,7 @@
     #img-container {
         width: 280px;
     }
-}
+} */
 
 .space {
     height: 100px;

@@ -130,7 +130,7 @@ button:focus:not(:focus-visible) {
     background-color: blueviolet;
     position: absolute;
     right: 0;
-    top: 3rem;
+    top: 4.85rem;
     background-color: #fff;
 }
 #make,
@@ -232,7 +232,7 @@ top: 0px;
     }
     .offcanvas.offcanvas-end {
         width: 300px;
-        top: 79.6px;
+        top: 79.8px;
         left: 0;
         transform: translateX(-300px);
     }
