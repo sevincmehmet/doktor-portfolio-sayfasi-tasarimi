@@ -31,7 +31,7 @@ const Contacts = () => {
                                             />
                                         </div>
                                         <div className="telephone-body">
-                                            <a href="tel:0346-399-01-66">+90 (0346) 399 0166</a>
+                                            <a href="tel:0346-399-01-66">+90 (0346) 399 01 66</a>
                                             <div className="telephone-text">
                                                 Randevu ve Online Danışmanlık
                                             </div>

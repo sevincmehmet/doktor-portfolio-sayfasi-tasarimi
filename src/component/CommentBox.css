@@ -1,0 +1,28 @@
+#comment-box {
+    background-color: var(--second-color);
+    border: none;
+    border-radius: 5px;
+    margin-inline-start: 50px;
+    box-shadow: 0 0 28px rgb(130 140 165 / 10%);
+}
+.date-statu{
+    display: flex;
+}
+.status {
+    margin: 0 1rem;
+    padding: 0.2rem 0.5rem;
+    height: 20px;
+}
+.questions-title {
+    padding-left:0;
+    padding-right:0;
+    margin-left: -0.5rem;
+}
+@media (max-width: 991.98px) {
+    #comment-box {
+        margin-inline-start: 0px;
+    }
+}
+.accordion-header .h3 {
+    color: var(--black-color);
+}
