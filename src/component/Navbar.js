@@ -95,7 +95,7 @@ function Navbars() {
                                 <Nav id="scrollspy1" className="text-nav justify-content-end flex-grow-1 menu-sidebar">
                                     <ul>
                                         <li >
-                                            <Link activeClass="active" className="nav-link" offset="-100" spy to="home" onClick={() => { setSideBarActive(!sideBarActive); }}
+                                            <Link activeClass="active" className="nav-link" offset={-90} spy to="home" onClick={() => { setSideBarActive(!sideBarActive); }}
                                             >
                                                 Anasayfa
                                             </Link>
@@ -105,7 +105,8 @@ function Navbars() {
                                             activeClass="active"
                                              className="nav-link"
                                               spy
-                                              offset="-100"
+                                              offset={-90}
+                                              
                                                 to="about"
                                                 
                                                  onClick={() => { setSideBarActive(!sideBarActive); }}
@@ -116,21 +117,21 @@ function Navbars() {
                                         </li>
                                         
                                         <li>
-                                            <Link activeClass="active" className="nav-link" offset="-100" spy to="services" onClick={() => { setSideBarActive(!sideBarActive); }}
+                                            <Link activeClass="active" className="nav-link" offset={-90} spy to="services" onClick={() => { setSideBarActive(!sideBarActive); }}
                                             >
                                             Sorularınız  
                                             </Link>
                                         </li>
                                         
                                         <li>
-                                            <Link activeClass="active" className="nav-link" offset="-100" spy to="contacts" onClick={() => { setSideBarActive(!sideBarActive); }}
+                                            <Link activeClass="active" className="nav-link" offset={-90} spy to="contacts" onClick={() => { setSideBarActive(!sideBarActive); }}
                                             >
                                                 İletişim
                                             </Link>
                                         </li>
                                         <li>
                                             <Link style={{ color: "white" }} activeClass="active" id="make" className="nav-link btn btn-primary" onClick={() => { setSideBarActive(!sideBarActive); }}
-                                             offset="-100" spy to="contacts">
+                                             offset={-90} spy to="contacts">
                                                 Randevu Al
                                             </Link>
                                         </li>
