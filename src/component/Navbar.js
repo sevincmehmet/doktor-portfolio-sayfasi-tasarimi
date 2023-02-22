@@ -6,9 +6,13 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "./assets/site-logo.png"
 import { Link } from "react-scroll";
+import { useNavigate } from "react-router-dom";
+
 import "./Navbar.css";
-function Navbars() {
-    const [scroolActive, setScroolActive] = useState(false);
+function Navbars({
+    scroolActive,
+    setScroolActive
+}) {
     const [dotClick, setDotClick] = useState(false)
     const [sideBarActive, setSideBarActive] = useState(false);
     const [offsetNumber, setOffsetNumber] = useState(-90);
@@ -16,6 +20,7 @@ function Navbars() {
         window.innerWidth,
         window.innerHeight,
     ]);
+    const navigate = useNavigate();
 
     document.body.style.cssText = "padding-right: 0px !important;";
 
@@ -101,7 +106,7 @@ function Navbars() {
 
                         {/* <button className=" btn btn-danger" type="button" }></button> */}
                         <div id="menu-icon-div">
-                            <i className="menu-icon d-xl-none fa-sharp fa-solid fa-bars" onClick={() => { setSideBarActive(!sideBarActive); }}></i>
+                            <i className="menu-icon d-xl-none fa-sharp fa-solid fa-bars" onClick={() => { setSideBarActive(!sideBarActive); navigate("/") }}></i>
 
                         </div>
                         <Navbar.Offcanvas
@@ -115,12 +120,12 @@ function Navbars() {
                                 <Nav id="scrollspy1" className="text-nav justify-content-end flex-grow-1 menu-sidebar">
                                     <ul>
                                         <li >
-                                            <Link
+                                            <Link 
                                                 activeClass="active"
                                                 className="nav-link"
                                                 offset={offsetNumber}
                                                 spy to="home"
-                                                onClick={() => { setSideBarActive(!sideBarActive); }}
+                                                onClick={() => { setSideBarActive(!sideBarActive); navigate("/") }}
                                             >
                                                 Anasayfa
                                             </Link>
@@ -133,7 +138,7 @@ function Navbars() {
                                                 offset={offsetNumber}
                                                 to="about"
 
-                                                onClick={() => { setSideBarActive(!sideBarActive); }}
+                                                onClick={() => { setSideBarActive(!sideBarActive); navigate("/") }}
 
                                             >
                                                 Hakkımda
@@ -147,7 +152,7 @@ function Navbars() {
                                                 className="nav-link"
                                                 offset={offsetNumber}
                                                 spy to="services"
-                                                onClick={() => { setSideBarActive(!sideBarActive); }}
+                                                onClick={() => { setSideBarActive(!sideBarActive); navigate("/") }}
                                             >
                                                 Sorularınız
                                             </Link>
@@ -157,7 +162,7 @@ function Navbars() {
                                             <Link activeClass="active"
                                                 className="nav-link"
                                                 offset={offsetNumber}
-                                                spy to="contacts" onClick={() => { setSideBarActive(!sideBarActive); }}
+                                                spy to="contacts" onClick={() => { setSideBarActive(!sideBarActive); navigate("/") }}
                                             >
                                                 İletişim
                                             </Link>
@@ -169,7 +174,7 @@ function Navbars() {
                                                 activeClass="active"
                                                 id="make"
                                                 className="nav-link btn btn-primary"
-                                                onClick={() => { setSideBarActive(!sideBarActive); }}
+                                                onClick={() => { setSideBarActive(!sideBarActive); navigate("/") }}
                                                 spy to="contacts">
                                                 Randevu Al
                                             </Link>
