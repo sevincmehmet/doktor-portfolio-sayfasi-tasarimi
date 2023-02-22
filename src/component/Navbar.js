@@ -124,9 +124,9 @@ function Navbars({
                                                 activeClass="active"
                                                 className="nav-link"
                                                 offset={offsetNumber}
-                                                spy to="home"
                                                 onClick={() => { setSideBarActive(!sideBarActive); navigate("/") }}
-                                            >
+                                                spy to="home"
+                                                >
                                                 Anasayfa
                                             </Link>
                                         </li>
@@ -134,11 +134,11 @@ function Navbars({
                                             <Link
                                                 activeClass="active"
                                                 className="nav-link"
-                                                spy
                                                 offset={offsetNumber}
-                                                to="about"
-
+                                                
                                                 onClick={() => { setSideBarActive(!sideBarActive); navigate("/") }}
+                                                spy
+                                                to="about"
 
                                             >
                                                 Hakkımda
@@ -151,8 +151,8 @@ function Navbars({
                                                 activeClass="active"
                                                 className="nav-link"
                                                 offset={offsetNumber}
-                                                spy to="services"
                                                 onClick={() => { setSideBarActive(!sideBarActive); navigate("/") }}
+                                                spy to="services"
                                             >
                                                 Sorularınız
                                             </Link>
@@ -162,8 +162,9 @@ function Navbars({
                                             <Link activeClass="active"
                                                 className="nav-link"
                                                 offset={offsetNumber}
-                                                spy to="contacts" onClick={() => { setSideBarActive(!sideBarActive); navigate("/") }}
-                                            >
+                                                onClick={() => { setSideBarActive(!sideBarActive); navigate("/") }}
+                                                spy to="contacts" 
+                                                >
                                                 İletişim
                                             </Link>
                                         </li>

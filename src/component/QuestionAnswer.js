@@ -7,14 +7,13 @@ const QuestionAnswer = ({
     title,
     date,
     questions,
-    feedBack,
-    oKey
+    feedBack
 }) => {
     const [accordionActive, setAccordionActive] = useState(false)
 
     return (
     
-                <Accordion.Item eventKey={oKey}>
+                <Accordion.Item eventKey={id}>
                 <Accordion.Header onClick={() => { setAccordionActive(!accordionActive) }} className={!accordionActive ? "accordion-active accordion-header" : "border-b accordion-header"}>
                     <div className="h3"><span className="numberColor">0{id}.</span> {title}</div>
                 </Accordion.Header>

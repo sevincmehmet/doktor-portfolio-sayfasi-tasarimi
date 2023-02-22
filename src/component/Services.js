@@ -29,7 +29,6 @@ const Services = () => {
 
                                         <div key={index}>
                                             <QuestionAnswer
-                                                oKey={element.id}
                                                 id={element.id}
                                                 title={element.title}
                                                 date={element.date}

@@ -16,6 +16,7 @@
 }
 
 #services,
+#allQuestions,
 #contacts {
   background: var(--main-color);
 }
@@ -23,6 +24,7 @@
 #home,
 #contacts,
 #reviews,
+#allQuestions,
 #services,
 #about {
   padding: 100px 0;
@@ -59,6 +61,7 @@
   #home,
   #contacts,
   #reviews,
+  #allQuestions,
   #services,
   #about {
     padding: 50px 0;

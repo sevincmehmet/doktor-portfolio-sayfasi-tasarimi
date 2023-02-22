@@ -21,8 +21,12 @@ const AllQuestions = ({
         document.getElementById('header').classList.remove('nav');
         document.getElementById('header').classList.add('navActive');
         document.getElementById('navShadow').classList.remove('nav-shadow');
-        document.getElementById('sorulariniz').classList.add('active');
-        console.log(questionsData);
+        // document.getElementById('sorulariniz').id = "allQuestions";
+        document.getElementById('sorulariniz').innerHTML = "Tüm Sorular";
+
+        document.getElementById('sorulariniz').style.cssText = "width:120px; color:var(--threed-color)";
+
+        // document.getElementById('sorulariniz').classList.add('active');
     }, [questionsData])
 
 
@@ -34,7 +38,7 @@ const AllQuestions = ({
                 scroolActive={scroolActive}
                 setScroolActive={setScroolActive}
             />
-            <div id="services">
+            <div id="allQuestions">
 
                 <div className="container">
                     <div className="row">
@@ -51,8 +55,6 @@ const AllQuestions = ({
 
                                             <div key={index}>
                                                 <QuestionAnswer
-
-                                                    oKey={1}
                                                     id={element.id}
                                                     title={element.title}
                                                     date={element.date}
