@@ -53,16 +53,16 @@ const Contacts = () => {
                                     </a>
                                     <div className="social">
                                         <a className="icon icon-md " href="#">
-                                            <i className="fa-brands fa-facebook-f"></i>
+                                            <img src={ImagePaths.facebookIcon} width="60px" alt="" />
                                         </a>
                                         <a className="icon icon-md " href="#">
-                                            <i className="fa-brands fa-instagram"></i>{" "}
+                                            <img src={ImagePaths.instagramIcon} width="60px" alt="" />
                                         </a>
                                         <a className="icon icon-md " href="#">
-                                            <i className="fa-brands fa-youtube"></i>
+                                            <img src={ImagePaths.youtubeIcon} width="60px" alt="" />
                                         </a>
                                         <a className="icon icon-md " href="#">
-                                            <i className="fa-brands fa-twitter"></i>
+                                            <img src={ImagePaths.twitterIcon} width="60px" alt="" />
                                         </a>
                                     </div>
                                 </div>

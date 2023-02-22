@@ -54,7 +54,6 @@ function Navbars() {
             } else {
                 setOffsetNumber(-100)
             }
-            console.log(offsetNumber);
         }
         
         
@@ -62,7 +61,7 @@ function Navbars() {
     }
     return (
         <>
-            <header className={scroolActive || windowSize[0] < 1200 ? "navActive" : "nav"}>
+            <header id="header" className={scroolActive || windowSize[0] < 1200 ? "navActive" : "nav"}>
                 <div onClick={() => {
                     setDotClick(!dotClick);
                 }} className={dotClick ? "rotate-dot setting-icon d-xl-none" : "setting-icon d-xl-none"}>
@@ -89,6 +88,7 @@ function Navbars() {
                 <Navbar
                     key={"xl"}
                     expand={"xl"}
+                    id="navShadow"
                     className={scroolActive || windowSize[0] < 1200 ? " nav__container mb-3" : "nav-shadow nav__container mb-3"}
                 >
                     <Container fluid >
@@ -141,7 +141,9 @@ function Navbars() {
                                         </li>
 
                                         <li>
-                                            <Link activeClass="active"
+                                            <Link 
+                                                id="sorulariniz"
+                                                activeClass="active"
                                                 className="nav-link"
                                                 offset={offsetNumber}
                                                 spy to="services"

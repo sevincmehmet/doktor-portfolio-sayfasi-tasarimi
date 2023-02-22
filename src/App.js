@@ -1,53 +1,58 @@
 
 import React, { Fragment } from "react";
-import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
-import Navbar from "./component/Navbar";
-import Home from "./component/Home";
-import About from "./component/About";
-import Services from "./component/Services"
-import Reviews from "./component/Reviews";
-import Contacts from "./component/Contacts";
-import ScrollToTop from "./component/ScrollToTop";
-import { Routes, Route, Link, NavLink } from "react-router-dom" 
+import Main from "./component/Main";
+
+
+// import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
+// import Navbar from "./component/Navbar";
+// import Home from "./component/Home";
+// import About from "./component/About";
+// import Services from "./component/Services"
+// import Reviews from "./component/Reviews";
+// import Contacts from "./component/Contacts";
+// import ScrollToTop from "./component/ScrollToTop";
+import AllQuestions from "./component/AllQuestions";
+import { Routes, Route, Link, NavLink } from "react-router-dom"
 
 import "./App.css";
 
-const containerStyle = {
-  width: '100%',
-  height: '100%'
-};
 
-const center = {
-  lat: 39.736700829199485,
-  lng: 37.0328508
-};
+// const containerStyle = {
+//   width: '100%',
+//   height: '100%'
+// };
+
+// const center = {
+//   lat: 39.736700829199485,
+//   lng: 37.0328508
+// };
 
 const App = () => {
 
-  const { isLoaded } = useJsApiLoader({
-    id: 'google-map-script',
-    googleMapsApiKey: "AIzaSyDMszvYEekN9PQoS9R8Br0JEqUgVa1Ku4s"  //need to define your google api key 
-  })
+  // const { isLoaded } = useJsApiLoader({
+  //   id: 'google-map-script',
+  //   googleMapsApiKey: "AIzaSyDMszvYEekN9PQoS9R8Br0JEqUgVa1Ku4s"  //need to define your google api key 
+  // })
 
-  const [map, setMap] = React.useState(null)
+  // const [map, setMap] = React.useState(null)
 
-  const onLoad = React.useCallback(function callback(map) {
-    const bounds = new window.google.maps.LatLngBounds(center);
-    map.fitBounds(bounds);
-    setMap(map)
-  }, [])
+  // const onLoad = React.useCallback(function callback(map) {
+  //   const bounds = new window.google.maps.LatLngBounds(center);
+  //   map.fitBounds(bounds);
+  //   setMap(map)
+  // }, [])
 
-  const onUnmount = React.useCallback(function callback(map) {
-    setMap(null)
-  }, [])
+  // const onUnmount = React.useCallback(function callback(map) {
+  //   setMap(null)
+  // }, [])
 
 
   return (<>
-  
+
     <div style={{ position: 'relative' }}>
 
       <div className="App">
-        <ScrollToTop/>
+        {/* <ScrollToTop/>
         <Navbar />
 
           <section  id="home"><Home /> </section>
@@ -69,7 +74,18 @@ const App = () => {
               : <>
               </>
             }
-          </section>
+          </section> */}
+        <Routes>
+          <Route exact path="/" element={
+            <Main />
+          }>
+          </Route>
+          <Route path="/allQuestions" element={
+            <AllQuestions />
+          }/>
+          
+        </Routes>
+
       </div>
 
     </div>

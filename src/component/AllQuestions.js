@@ -1,19 +1,36 @@
+import Navbar from "./Navbar"
 import { useState, useEffect } from "react";
 import Accordion from "react-bootstrap/Accordion";
 import QuestionAnswer from "./QuestionAnswer";
 import Questions from "./Questions";
-import { Routes, Route, Link, NavLink } from "react-router-dom"
+import ScrollToTop from "./ScrollToTop";
 
-import "./Services.css";
-const Services = () => {
+import "./AllQuestions.css"
+
+const AllQuestions = () => {
     const [questionsData, setQuestionsData] = useState(Questions)
 
     useEffect(() => {
-
+        document.getElementById('header').classList.remove('nav');
+        document.getElementById('header').classList.add('navActive');
+        document.getElementById('navShadow').classList.remove('nav-shadow');
+        document.getElementById('sorulariniz').classList.add('active');
+        for (let index = 0; index < 5; index++) {
+            document.getElementsByClassName('accordion-collapse')[index].style.cssText = "display:block;"
+            document.getElementsByClassName('accordion-button')[index].setAttribute('disabled', true)
+        }
+            
+            console.log(questionsData);
     }, [questionsData])
+
+   
 
     return (
         <>
+        <ScrollToTop/>
+            <Navbar />
+            <div id="services">
+                
             <div className="container">
                 <div className="row">
                     <div className="col-xxl-10 col-xl-11 col-md-11 col-sm-12 m-auto">
@@ -29,8 +46,9 @@ const Services = () => {
 
                                         <div key={index}>
                                             <QuestionAnswer
-                                                isActive={[{},{}]}
-                                                oKey={index}
+                                                
+                                                isActive={[{color:"#177ee5"},{display:"block"}]}
+                                                oKey={1}
                                                 id={element.id}
                                                 title={element.title}
                                                 date={element.date}
@@ -41,21 +59,15 @@ const Services = () => {
                                     )
                                 })}
                             </Accordion>
-                            <Link
-                                to="/allQuestions"
-                                style={{ color: "white", marginLeft: "0" }}
-                                id="allQuestionsBtn"
-                                className="nav-link btn btn-primary"
-                            >
-                                Tüm Sorular
-                            </Link>
 
                             <div className="accordion"></div>
                         </div>
                     </div>
                 </div>
             </div>
+            </div>
         </>
-    );
-};
-export default Services;
+
+    )
+}
+export default AllQuestions;
