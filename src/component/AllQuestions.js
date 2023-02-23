@@ -1,5 +1,5 @@
 import Navbar from "./Navbar"
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import Accordion from "react-bootstrap/Accordion";
 import QuestionAnswer from "./QuestionAnswer";
 import Questions from "./Questions";
@@ -13,9 +13,9 @@ const AllQuestions = ({
     scroolActive,
     setScroolActive
 }) => {
-    const [questionsData, setQuestionsData] = useState(Questions)
+    
+    const questionsData = Questions
 
-    setScroolActive(true)
 
     useEffect(() => {
         document.getElementById('header').classList.remove('nav');
@@ -24,12 +24,14 @@ const AllQuestions = ({
         // document.getElementById('sorulariniz').id = "allQuestions";
         document.getElementById('sorulariniz').innerHTML = "Tüm Sorular";
 
-        document.getElementById('sorulariniz').style.cssText = "width:120px; color:var(--threed-color)";
+        document.getElementById('sorulariniz').style.cssText = "width:108px; color:var(--threed-color)";
 
         // document.getElementById('sorulariniz').classList.add('active');
     }, [questionsData])
 
-
+useEffect(() => {
+    setScroolActive(true)
+},[])
 
     return (
         <>

@@ -86,6 +86,7 @@ function Navbars({
                 <div className={dotClick ? "d-xl-none dot-modal" : "d-none dot-modal"}>
                     <Link id="dotMake" offset={offsetNumber} className="btn btn-primary" activeClass="active" spy to="contacts" onClick={() => {
                         setDotClick(!dotClick);
+                        navigate("/");
                     }}>
                         Randevu Al
                     </Link>
@@ -98,7 +99,12 @@ function Navbars({
                 >
                     <Container fluid >
                         <Navbar.Brand href="#">
-                            <div className="logo">
+                            <div 
+                                className="logo"
+                                onClick={() => {
+                                    navigate("/")
+                                }}
+                                >
                                 <img src={Logo} ></img>
                             </div>
                         </Navbar.Brand>
