@@ -59,7 +59,7 @@ const About = () => {
       </div>
 
       {/* Alt Taraf */}
-    <div className="pt-5 mt-5">
+    <div className="pt-5 pb-5 mt-5 ">
       <InfShr />
     </div>
 

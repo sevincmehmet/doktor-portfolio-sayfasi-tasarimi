@@ -13,7 +13,7 @@ const InfShr = () => {
                                 <article className="blurb blurb-hover">
                                     <div className="icon blurb-icon d-flex justify-content-center">
                                     </div>
-                                    <div className="blurb-title text-center fw-bold">
+                                    <div className="blurb-title text-center fw-bold" style={{color: "var(--black-color)"}}>
                                         <h6>Neden Youtube ?</h6>
                                     </div>
                                     <div className="blurb-text text-center">
@@ -26,7 +26,7 @@ const InfShr = () => {
                                 <article className="blurb blurb-hover">
                                     <div className="icon blurb-icon d-flex justify-content-center">
                                     </div>
-                                    <div className="blurb-title text-center fw-bold">
+                                    <div className="blurb-title text-center fw-bold" style={{color: "var(--black-color)"}}>
                                         <h6>Neden Instagram ?</h6>
                                     </div>
                                     <div className="blurb-text text-center">
@@ -41,7 +41,7 @@ const InfShr = () => {
                                     <div className="icon blurb-icon d-flex justify-content-center">
 
                                     </div>
-                                    <div className="blurb-title text-center fw-bold">
+                                    <div className="blurb-title text-center fw-bold" style={{color: "var(--black-color)"}}>
                                         <h6>Neden Online Hasta Takibi ?</h6>
                                     </div>
                                     <div className="blurb-text text-center">
