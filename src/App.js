@@ -21,14 +21,14 @@ const App = () => {
       <div className="App">
 
         <Routes>
-          <Route exact path="/" element={
+          <Route path="/" element={
             <Main scroolActive={scroolActive} setScroolActive={setScroolActive} />
           }>
           </Route>
-          <Route path="/allQuestions" element={
+          <Route exact path="/allQuestions" element={
             <AllQuestions scroolActive={scroolActive} setScroolActive={setScroolActive} />
           } />
-
+          <Route path="*" element={<Main scroolActive={scroolActive} setScroolActive={setScroolActive} />} />
         </Routes>
 
       </div>
