@@ -204,7 +204,6 @@ top: 0px;
 .nav-link:hover,
 .active:hover {
     color: var(--threed-color);
-    font-weight: 500;
 }
 .navbar-nav .nav-link.active {
     color: var(--threed-color);
