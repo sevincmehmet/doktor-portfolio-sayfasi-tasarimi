@@ -24,7 +24,7 @@ const AllQuestions = ({
         // document.getElementById('sorulariniz').id = "allQuestions";
         document.getElementById('sorulariniz').innerHTML = "Tüm Sorular";
 
-        document.getElementById('sorulariniz').style.cssText = "width:112px;font-weight:600; color:var(--threed-color)";        // document.getElementById('sorulariniz').classList.add('active');
+        document.getElementById('sorulariniz').style.cssText = "padding:0; width:112px;font-weight:600; color:var(--threed-color)";        // document.getElementById('sorulariniz').classList.add('active');
     }, [questionsData])
 
 useEffect(() => {
