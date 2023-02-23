@@ -220,11 +220,11 @@ top: 0px;
         display: flex;
         position: absolute;
         left: calc(50% - 30px);
-        top: calc(50% - 27px);
+        top: calc(50% - 24px);
     }
     .logo img {
-        height: 70px;
-        width: 70px;
+        height: 63px;
+        width: 63px;
     }
     .navActive{
         height: 80px;

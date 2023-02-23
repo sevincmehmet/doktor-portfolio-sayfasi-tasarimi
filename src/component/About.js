@@ -1,5 +1,6 @@
 import about_image from "./assets/aboutImg.jpeg";
 import home_image from "./assets/homeImg.png"
+import InfShr from "./InfShr"
 
 import "./About.css";
 
@@ -56,6 +57,12 @@ const About = () => {
           </div>
         </div>
       </div>
+
+      {/* Alt Taraf */}
+    <div className="pt-5 mt-5">
+      <InfShr />
+    </div>
+
     </>
   );
 };

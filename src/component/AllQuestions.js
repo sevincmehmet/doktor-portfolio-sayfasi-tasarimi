@@ -23,13 +23,19 @@ const AllQuestions = ({
         document.getElementById('navShadow').classList.remove('nav-shadow');
         // document.getElementById('sorulariniz').id = "allQuestions";
         document.getElementById('sorulariniz').innerHTML = "Tüm Sorular";
+        document.getElementById('sorulariniz').style.cssText = "padding:12px 0;"
+        if (window.innerWidth < 1200) {
+            document.getElementById('sorulariniz').style.cssText = "padding:12px 0; margin: 0 30px;"
+        }
 
-        document.getElementById('sorulariniz').style.cssText = "padding:0; width:112px;font-weight:600; color:var(--threed-color)";        // document.getElementById('sorulariniz').classList.add('active');
+        document.getElementById('sorulariniz').classList.add('allQuestions'); 
     }, [questionsData])
 
 useEffect(() => {
     setScroolActive(true)
 }, [scroolActive])
+
+
 
     return (
         <>

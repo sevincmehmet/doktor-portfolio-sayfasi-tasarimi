@@ -110,7 +110,7 @@ function Navbars({
 
                         {/* <button className=" btn btn-danger" type="button" }></button> */}
                         <div id="menu-icon-div">
-                            <i className="menu-icon d-xl-none fa-sharp fa-solid fa-bars" onClick={() => { setSideBarActive(!sideBarActive); navigate("/") }}></i>
+                            <i className="menu-icon d-xl-none fa-sharp fa-solid fa-bars" onClick={() => { setSideBarActive(!sideBarActive);}}></i>
 
                         </div>
                         <Navbar.Offcanvas

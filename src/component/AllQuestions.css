@@ -1,0 +1,6 @@
+.allQuestions {
+    padding: 0;
+    width: 112px;
+    font-weight: 600;
+    color: var(--threed-color);
+}
