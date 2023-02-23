@@ -52,7 +52,6 @@ function Navbars({
     const offsetNumberControl = () => {
         if (windowSize[0] < 1200) {
             setOffsetNumber(-80);
-            console.log(offsetNumber);
         } else if(windowSize[0] >= 1200) {
             if (scroolActive) {
                 setOffsetNumber(-90)

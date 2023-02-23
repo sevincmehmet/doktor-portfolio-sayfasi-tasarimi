@@ -1,5 +1,5 @@
 import Navbar from "./Navbar"
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import Accordion from "react-bootstrap/Accordion";
 import QuestionAnswer from "./QuestionAnswer";
 import Questions from "./Questions";
@@ -24,14 +24,13 @@ const AllQuestions = ({
         // document.getElementById('sorulariniz').id = "allQuestions";
         document.getElementById('sorulariniz').innerHTML = "Tüm Sorular";
 
-        document.getElementById('sorulariniz').style.cssText = "width:108px; color:var(--threed-color)";
-
+        document.getElementById('sorulariniz').style.cssText = "width:112px;font-weight:600; color:var(--threed-color)";
         // document.getElementById('sorulariniz').classList.add('active');
     }, [questionsData])
 
 useEffect(() => {
     setScroolActive(true)
-},[])
+}, [scroolActive])
 
     return (
         <>
