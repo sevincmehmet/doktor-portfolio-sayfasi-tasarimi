@@ -39,10 +39,12 @@ function Navbars({
     useEffect(()=> {
         offsetNumberControl();
     }, [scroolActive])
+    
     const scroolAnimate = () => {
-        if (window.scrollY > 3) {
+
+        if (window.scrollY > 16) {
             setScroolActive(true)
-        } else {
+        } else if(window.scrollY < 1){
             setScroolActive(false)
         }
     };
@@ -58,10 +60,7 @@ function Navbars({
             } else {
                 setOffsetNumber(-100)
             }
-        }
-        
-        
-        
+        }        
     }
     return (
         <>
@@ -127,7 +126,7 @@ function Navbars({
                                         <li >
                                             <Link 
                                                 activeClass="active"
-                                                className="nav-link"
+                                                className={scroolActive? "nav-link" : "nav-link active"}
                                                 offset={offsetNumber}
                                                 onClick={() => { setSideBarActive(!sideBarActive); navigate("/") }}
                                                 spy to="home"

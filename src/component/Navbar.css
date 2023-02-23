@@ -259,6 +259,7 @@ top: 0px;
         color: var(--black-color);
         font-weight: 400;
         border-bottom: 1px solid #e5e5e5 ;
+        width: 100%;
     }
     .offcanvas ul li a {
         font-size: 20.44px;
