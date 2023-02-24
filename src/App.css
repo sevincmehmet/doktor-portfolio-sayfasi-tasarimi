@@ -11,16 +11,21 @@
   height: 100%;
 }
 
-#home {
-  background: var(--main-color);
+.main-item:nth-child(even) {
+  background-color: var(--main-color);
+}
+
+
+/* #home {
+   background: var(--main-color); 
 }
 
 #services,
 #allQuestions,
 #contacts {
-  background: var(--main-color);
-}
-
+   background: var(--main-color); 
+}  */
+#videos,
 #home,
 #contacts,
 #reviews,
@@ -58,6 +63,7 @@
 }
 
 @media (max-width: 575.98px) {
+  #videos,
   #home,
   #contacts,
   #reviews,

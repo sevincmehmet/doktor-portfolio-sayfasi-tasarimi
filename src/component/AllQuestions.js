@@ -2,7 +2,7 @@ import Navbar from "./Navbar"
 import { useState, useEffect } from "react";
 import Accordion from "react-bootstrap/Accordion";
 import QuestionAnswer from "./QuestionAnswer";
-import Questions from "./Questions";
+import Questions from "./ArrQuestions";
 import ScrollToTop from "./ScrollToTop";
 
 

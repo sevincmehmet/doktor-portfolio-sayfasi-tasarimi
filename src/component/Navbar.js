@@ -148,7 +148,20 @@ function Navbars({
                                                 Hakkımda
                                             </Link>
                                         </li>
+                                        <li>
+                                            <Link
+                                                activeClass="active"
+                                                className="nav-link"
+                                                offset={offsetNumber}
+                                                
+                                                onClick={() => { setSideBarActive(!sideBarActive); navigate("/") }}
+                                                spy
+                                                to="videos"
 
+                                            >
+                                                Videolar
+                                            </Link>
+                                        </li>
                                         <li>
                                             <Link 
                                                 id="sorulariniz"

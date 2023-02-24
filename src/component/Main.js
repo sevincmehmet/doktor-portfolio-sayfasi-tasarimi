@@ -7,6 +7,7 @@ import Services from "./Services"
 import Reviews from "./Reviews";
 import Contacts from "./Contacts";
 import ScrollToTop from "./ScrollToTop";
+import Videos from "./Videos";
 
 import "../App.css";
 
@@ -50,11 +51,12 @@ const Main = ({
                 setScroolActive={setScroolActive}
             />
 
-            <section id="home"><Home /> </section>
-            <section id="about"><About /></section>
-            <section id="services"><Services /></section>
-            <section id="reviews"><Reviews /></section>
-            <section id="contacts"><Contacts /></section>
+            <section className="main-item" id="home"><Home /> </section>
+            <section className="main-item" id="about"><About /></section>
+            <section className="main-item" id="videos"><Videos /></section>
+            <section className="main-item" id="services"><Services /></section>
+            <section className="main-item" id="reviews"><Reviews /></section>
+            <section className="main-item" id="contacts"><Contacts /></section>
             <section className="maps-container">
                 {isLoaded ? <GoogleMap
                     mapContainerStyle={containerStyle}
