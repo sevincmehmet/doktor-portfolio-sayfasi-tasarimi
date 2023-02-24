@@ -1,19 +1,23 @@
+import ImagePaths from "./assets/images/ImagePaths";
 const InfShr = () => {
     return (
         <>
             <div className="container pt-5">
                 <h2 className="home-title text-center pb-5" style={{ fontSize: "31.5px" }}>
-                    Bilgi Paylaşım Yöntemlerimiz;
+                    Bilgi Paylaşım Yöntemlerim;
                 </h2>
                 <br />
                 <div className="row row-30">
                     <div className="offset-xxl-1 col-xxl-10 offset-xxl-1 ">
                         <div className="row">
                             <div className="home-item col-sm-6 col-md-4 mb-4">
+
+                                <div className="icon blurb-icon d-flex justify-content-center pb-4">
+                                    <img src={ImagePaths.bpyYoutube} width={64} height={64} />
+                                </div>
                                 <article className="blurb blurb-hover">
-                                    <div className="icon blurb-icon d-flex justify-content-center">
-                                    </div>
-                                    <div className="blurb-title text-center fw-bold" style={{color: "var(--black-color)"}}>
+
+                                    <div className="blurb-title text-center fw-bold" style={{ color: "var(--black-color)" }}>
                                         <h6>Neden Youtube ?</h6>
                                     </div>
                                     <div className="blurb-text text-center">
@@ -23,10 +27,12 @@ const InfShr = () => {
                             </div>
 
                             <div className="home-item col-sm-6 col-md-4 mb-4">
+                                <div className="icon blurb-icon d-flex justify-content-center pb-4">
+                                    <img src={ImagePaths.bpyInstagram} width={64} height={64} />
+                                </div>
                                 <article className="blurb blurb-hover">
-                                    <div className="icon blurb-icon d-flex justify-content-center">
-                                    </div>
-                                    <div className="blurb-title text-center fw-bold" style={{color: "var(--black-color)"}}>
+
+                                    <div className="blurb-title text-center fw-bold" style={{ color: "var(--black-color)" }}>
                                         <h6>Neden Instagram ?</h6>
                                     </div>
                                     <div className="blurb-text text-center">
@@ -37,11 +43,12 @@ const InfShr = () => {
                             </div>
 
                             <div className="home-item col-sm-6 col-md-4">
+                                <div className="icon blurb-icon d-flex justify-content-center pb-4">
+                                    <img src={ImagePaths.bpyOnline} width={64} height={64} />
+                                </div>
                                 <article className="blurb blurb-hover">
-                                    <div className="icon blurb-icon d-flex justify-content-center">
 
-                                    </div>
-                                    <div className="blurb-title text-center fw-bold" style={{color: "var(--black-color)"}}>
+                                    <div className="blurb-title text-center fw-bold" style={{ color: "var(--black-color)" }}>
                                         <h6>Neden Online Hasta Takibi ?</h6>
                                     </div>
                                     <div className="blurb-text text-center">
