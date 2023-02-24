@@ -7,7 +7,6 @@ import Services from "./Services"
 import Reviews from "./Reviews";
 import Contacts from "./Contacts";
 import ScrollToTop from "./ScrollToTop";
-import { useNavigate } from "react-router-dom";
 
 import "../App.css";
 

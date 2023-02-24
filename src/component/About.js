@@ -1,5 +1,4 @@
 import about_image from "./assets/aboutImg.jpeg";
-import home_image from "./assets/homeImg.png"
 import InfShr from "./InfShr"
 
 import "./About.css";
