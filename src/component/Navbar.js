@@ -56,9 +56,9 @@ function Navbars({
             setOffsetNumber(-80);
         } else if(windowSize[0] >= 1200) {
             if (scroolActive) {
-                setOffsetNumber(-90)
+                setOffsetNumber(-89)
             } else {
-                setOffsetNumber(-100)
+                setOffsetNumber(-99)
             }
         }        
     }
@@ -150,6 +150,7 @@ function Navbars({
                                         </li>
                                         <li>
                                             <Link
+                                            id="videolar"
                                                 activeClass="active"
                                                 className="nav-link"
                                                 offset={offsetNumber}

@@ -1,5 +1,4 @@
 import arrVideoCategory from "./arrVideoCategory";
-
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -13,6 +12,7 @@ import "./Videos.css";
 
 // import required modules
 import { EffectCoverflow, Pagination } from "swiper";
+import {Link } from "react-router-dom"
 
 const Videos = () => {
 
@@ -42,13 +42,15 @@ const Videos = () => {
                             className="mySwiper"
                         >
                             <SwiperSlide>
-                                <img src={arrVideoCategory[0].catagoryImg} alt="" />
+                                <img src={arrVideoCategory[5].catagoryImg} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
                                 <img src={arrVideoCategory[1].catagoryImg} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={arrVideoCategory[2].catagoryImg} alt="" />
+                                <Link to="/allVideos">
+                                    <img src={arrVideoCategory[2].catagoryImg} alt="" />
+                                </Link>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <img src={arrVideoCategory[3].catagoryImg} alt="" />

@@ -2,6 +2,7 @@
 import React, { Fragment, useState } from "react";
 import Main from "./component/Main";
 import AllQuestions from "./component/AllQuestions";
+import AllVideos from "./component/AllVideos"
 import { Routes, Route, Link, NavLink, Navigate } from "react-router-dom"
 
 import "./App.css";
@@ -22,10 +23,15 @@ const App = () => {
             <Main scroolActive={scroolActive} setScroolActive={setScroolActive} />
           }>
           </Route>
+
           <Route exact path="/allQuestions" element={
             <AllQuestions scroolActive={scroolActive} setScroolActive={setScroolActive} />
           } />
           <Route path="*" element={<Navigate to={"/"} />} />
+
+          <Route exact path="/allVideos" element={
+            <AllVideos scroolActive={scroolActive} setScroolActive={setScroolActive}/>
+          } />
         </Routes>
 
       </div>

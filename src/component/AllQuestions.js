@@ -18,15 +18,8 @@ const AllQuestions = ({
 
 
     useEffect(() => {
-        document.getElementById('header').classList.remove('nav');
-        document.getElementById('header').classList.add('navActive');
-        document.getElementById('navShadow').classList.remove('nav-shadow');
-        // document.getElementById('sorulariniz').id = "allQuestions";
         document.getElementById('sorulariniz').innerHTML = "Tüm Sorular";
         document.getElementById('sorulariniz').classList.remove('nav-link');
-        
-        
-
         document.getElementById('sorulariniz').classList.add('allQuestions'); 
     }, [questionsData])
 
