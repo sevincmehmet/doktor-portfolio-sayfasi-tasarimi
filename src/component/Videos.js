@@ -13,6 +13,7 @@ import "./Videos.css";
 // import required modules
 import { EffectCoverflow, Pagination } from "swiper";
 import {Link } from "react-router-dom"
+import ImagePaths from "./assets/images/ImagePaths";
 
 const Videos = () => {
 
@@ -42,21 +43,21 @@ const Videos = () => {
                             className="mySwiper"
                         >
                             <SwiperSlide>
-                                <img src={arrVideoCategory[5].catagoryImg} alt="" />
+                                <img src={ImagePaths.linkImg_0} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={arrVideoCategory[1].catagoryImg} alt="" />
+                                <img src={ImagePaths.linkImg_1} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
                                 <Link to="/allVideos">
-                                    <img src={arrVideoCategory[2].catagoryImg} alt="" />
+                                    <img src={ImagePaths.linkImg_2} alt="" />
                                 </Link>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={arrVideoCategory[3].catagoryImg} alt="" />
+                                <img src={ImagePaths.linkImg_3} alt="" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={arrVideoCategory[4].catagoryImg} alt="" />
+                                <img src={ImagePaths.linkImg_4} alt="" />
                             </SwiperSlide>
 
 

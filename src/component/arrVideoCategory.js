@@ -9,7 +9,6 @@ export default [
                 vidoTitle: "Meningokok Aşısı",
                 videoArticle: "En uygun yaş, Amerikan Pediatri Akademisi Nasıl öneriyor?",
                 videoUrl: "https://www.youtube.com/embed/46uUF3BMfWc"
-                // https://www.youtube.com/embed/46uUF3BMfWc
             },
             {
                 vidoTitle: "Rota Aşısı",
