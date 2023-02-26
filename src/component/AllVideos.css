@@ -1,6 +1,7 @@
 .sidebarActive {
     border-left: 5px solid var(--threed-color);
     background-color: var(--main-color);
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
 .sidebar {
     background-color: var(--second-color);
@@ -9,7 +10,7 @@
     top: 90px;
     height: 100vh;
 }
-.sidebar li:hover {
+.sidebar li a:hover {
     border-left: 5px solid var(--threed-color);
     background-color: var(--main-color);
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
@@ -18,7 +19,7 @@
     position: absolute;
     right: 0;
     top: 90px;
-    min-height: 100vh;
+    min-height: calc(100vh - 90px);
     background-color: var(--main-color);
 }
 .allVideos {

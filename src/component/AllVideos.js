@@ -10,18 +10,27 @@ const AllVideos = ({
     setScroolActive
 }) => {
     const [data, setData] = useState(arrVideoCategory[0].catagoryVideos);
-
+    const [activeId, setActiveId] = useState(0)
     // setData(arrVideoCategory[0].catagoryVideos)
-   
+
     useEffect(() => {
         document.getElementById('header').style.cssText = "position:fixed; top:0"
         document.getElementById('videolar').innerHTML = "Tüm Videolar";
         document.getElementById('videolar').classList.remove('nav-link');
-        document.getElementById('videolar').classList.add('allVideos'); 
+        document.getElementById('videolar').classList.add('allVideos');
+
     }, [data])
     useEffect(() => {
-       setScroolActive(true)
+        setScroolActive(true)
     }, [scroolActive])
+
+    useEffect(() => {
+        for (let i = 0; i < document.getElementsByClassName('sidebar-item').length; i++) {
+
+            activeId == i ? document.getElementById(activeId).classList.add('sidebarActive')
+                : document.getElementById(i).classList.remove('sidebarActive')
+        }
+    }, [activeId])
 
     return (
         <>
@@ -34,27 +43,26 @@ const AllVideos = ({
 
             <div className="container-fluid">
                 <div className="w-100 ">
-                    <div id="sidebar" className="row pt-4" style={{backgroundColor: "var(--main-color)"}}>
+                    <div id="sidebar" className="row pt-4" style={{ backgroundColor: "var(--main-color)" }}>
                         <div className="sticky-top sidebar col-sm-3">
                             <ul>
                                 {arrVideoCategory.map((oItem, oIndex) => {
 
-                                    return <li key={oIndex} className="h5 fw-normal m-1 rounded ">
+                                    return <li key={oIndex} className="h5 fw-normal m-1">
                                         <a
                                             id={oIndex}
-                                            className="p-3 sidebar-item "
+                                            className="rounded p-4 sidebar-item d-flex align-items-center justify-content-between"
                                             href="#"
                                             onClick={() => {
                                                 setData(oItem.catagoryVideos);
+                                                setActiveId(oIndex)
                                             }}
                                         >
-                                            <div className="d-flex align-items-center justify-content-between ps-2 pe-4">
-                                                <div className="sidebar-title ">
-                                                    {oItem.catagoryTitle}
-                                                </div>
-                                                <div className="sidebar-length text-black-50 ">
-                                                    {oItem.catagoryVideos.length}
-                                                </div>
+                                            <div className="sidebar-title ">
+                                                {oItem.catagoryTitle}
+                                            </div>
+                                            <div className="sidebar-length text-black-50 ">
+                                                {oItem.catagoryVideos.length}
                                             </div>
                                         </a>
                                     </li>;
