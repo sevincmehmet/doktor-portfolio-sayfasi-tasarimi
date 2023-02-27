@@ -43,9 +43,7 @@
 .navbar>.container-fluid {
     width: 1103px;
 }
-.nav-shadow{
-    border-bottom: 1px solid  rgba(128, 128, 128, 0.111);
-}
+
 .nav .container-fluid {
     position: relative;
     bottom: 6px;
@@ -89,7 +87,7 @@ Nav li {
 Nav li:last-child{
     padding: 0;
     width: auto;
-    margin-right: 0;
+    margin-left: 12px;
 }
 Nav li a{
     font-size: 14px;
