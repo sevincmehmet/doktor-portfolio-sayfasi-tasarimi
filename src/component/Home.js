@@ -48,7 +48,7 @@ const Home = () => {
         </div>
       </div>
 
-    <div className="space"></div>
+    {/* <div className="space"></div> */}
       {/* Alt taraf */}
       <div className="container pt-5">
         <h2 className="home-title text-center" style={{ fontSize: "31.5px" }}>

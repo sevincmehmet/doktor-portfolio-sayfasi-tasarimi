@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import Accordion from "react-bootstrap/Accordion";
 import QuestionAnswer from "./QuestionAnswer";
 import Questions from "./ArrQuestions";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+
 
 import "./Services.css";
 const Services = () => {
@@ -39,14 +40,6 @@ const Services = () => {
                                     )
                                 })}
                             </Accordion>
-                            <Link
-                                to="/allQuestions"
-                                style={{ color: "white", marginLeft: "0" }}
-                                id="allQuestionsBtn"
-                                className="nav-link btn btn-primary"
-                            >
-                                Tüm Sorular
-                            </Link>
 
                             <div className="accordion"></div>
                         </div>

@@ -5,8 +5,11 @@ import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "./assets/site-logo.png"
-import { Link } from "react-scroll";
+import { Link }  from "react-scroll";
+import { Link as LinkRou} from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+
+
 
 import "./Navbar.css";
 function Navbars({
@@ -36,15 +39,15 @@ function Navbars({
         };
     });
 
-    useEffect(()=> {
+    useEffect(() => {
         offsetNumberControl();
     }, [scroolActive])
-    
+
     const scroolAnimate = () => {
 
         if (window.scrollY > 16) {
             setScroolActive(true)
-        } else if(window.scrollY < 1){
+        } else if (window.scrollY < 1) {
             setScroolActive(false)
         }
     };
@@ -54,13 +57,13 @@ function Navbars({
     const offsetNumberControl = () => {
         if (windowSize[0] < 1200) {
             setOffsetNumber(-80);
-        } else if(windowSize[0] >= 1200) {
+        } else if (windowSize[0] >= 1200) {
             if (scroolActive) {
                 setOffsetNumber(-89)
             } else {
                 setOffsetNumber(-99)
             }
-        }        
+        }
     }
     return (
         <>
@@ -97,12 +100,12 @@ function Navbars({
                 >
                     <Container fluid >
                         <Navbar.Brand href="#">
-                            <div 
+                            <div
                                 className="logo"
                                 onClick={() => {
                                     navigate("/")
                                 }}
-                                >
+                            >
                                 <img src={Logo} ></img>
                             </div>
                         </Navbar.Brand>
@@ -110,7 +113,7 @@ function Navbars({
 
                         {/* <button className=" btn btn-danger" type="button" }></button> */}
                         <div id="menu-icon-div">
-                            <i className="menu-icon d-xl-none fa-sharp fa-solid fa-bars" onClick={() => { setSideBarActive(!sideBarActive);}}></i>
+                            <i className="menu-icon d-xl-none fa-sharp fa-solid fa-bars" onClick={() => { setSideBarActive(!sideBarActive); }}></i>
 
                         </div>
                         <Navbar.Offcanvas
@@ -124,67 +127,40 @@ function Navbars({
                                 <Nav id="scrollspy1" className="text-nav justify-content-end flex-grow-1 menu-sidebar">
                                     <ul>
                                         <li >
-                                            <Link 
+                                            <Link
                                                 activeClass="active"
-                                                className={scroolActive? "nav-link" : "nav-link active"}
+                                                className={scroolActive ? "nav-link" : "nav-link active"}
                                                 offset={offsetNumber}
                                                 onClick={() => { setSideBarActive(!sideBarActive); navigate("/") }}
                                                 spy to="home"
-                                                >
+                                            >
                                                 Anasayfa
                                             </Link>
                                         </li>
+                                        
                                         <li>
-                                            <Link
-                                                activeClass="active"
+                                            <LinkRou
+                                                id="videolar"
                                                 className="nav-link"
                                                 offset={offsetNumber}
-                                                
-                                                onClick={() => { setSideBarActive(!sideBarActive); navigate("/") }}
-                                                spy
-                                                to="about"
 
-                                            >
-                                                Hakkımda
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link
-                                            id="videolar"
-                                                activeClass="active"
-                                                className="nav-link"
-                                                offset={offsetNumber}
-                                                
                                                 onClick={() => { setSideBarActive(!sideBarActive); navigate("/") }}
-                                                spy
-                                                to="videos"
+                                                to="/allVideos"
 
                                             >
                                                 Videolar
-                                            </Link>
+                                            </LinkRou>
                                         </li>
                                         <li>
-                                            <Link 
+                                            <LinkRou
                                                 id="sorulariniz"
-                                                activeClass="active"
                                                 className="nav-link"
                                                 offset={offsetNumber}
                                                 onClick={() => { setSideBarActive(!sideBarActive); navigate("/") }}
-                                                spy to="services"
+                                             to="/allQuestions"
                                             >
                                                 Sorularınız
-                                            </Link>
-                                        </li>
-
-                                        <li>
-                                            <Link activeClass="active"
-                                                className="nav-link"
-                                                offset={offsetNumber}
-                                                onClick={() => { setSideBarActive(!sideBarActive); navigate("/") }}
-                                                spy to="contacts" 
-                                                >
-                                                İletişim
-                                            </Link>
+                                            </LinkRou>
                                         </li>
                                         <li>
                                             <Link

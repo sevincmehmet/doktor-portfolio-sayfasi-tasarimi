@@ -18,9 +18,7 @@ const AllQuestions = ({
 
 
     useEffect(() => {
-        document.getElementById('sorulariniz').innerHTML = "Tüm Sorular";
-        document.getElementById('sorulariniz').classList.remove('nav-link');
-        document.getElementById('sorulariniz').classList.add('allQuestions'); 
+    
     }, [questionsData])
 
 useEffect(() => {

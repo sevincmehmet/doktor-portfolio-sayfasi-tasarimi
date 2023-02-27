@@ -52,7 +52,7 @@
 }
 .logo img {
     height: 70px;
-    width: 187px;
+    width: 70px;
 }
 
 .navbar-spaces {
@@ -82,7 +82,8 @@ Nav li {
 }
 Nav li:last-child{
     padding: 0;
-    width: 130px;
+    width: auto;
+    margin-right: 0;
 }
 Nav li a{
     font-size: 14px;

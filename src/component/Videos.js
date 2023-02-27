@@ -27,6 +27,7 @@ const Videos = () => {
 
 
                         <Swiper
+                          initialSlide="1"
                             effect={"coverflow"}
                             grabCursor={true}
                             centeredSlides={true}
@@ -43,21 +44,29 @@ const Videos = () => {
                             className="mySwiper"
                         >
                             <SwiperSlide>
-                                <img src={ImagePaths.linkImg_0} alt="" />
+                                <a href="https://www.youtube.com/playlist?list=PLvF5bPYH6JFtL_KkueBX0ciGw3l5Lgd1E">
+                                    <img src={ImagePaths.linkImg_0} alt="" />
+                                </a>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={ImagePaths.linkImg_1} alt="" />
+                                <a href="https://www.youtube.com/playlist?list=PLvF5bPYH6JFu7py7CG_yLsZGcAj5zXojI">
+                                    <img src={ImagePaths.linkImg_1} alt="" />
+                                </a>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <Link to="/allVideos">
-                                    <img src={ImagePaths.linkImg_2} alt="" />
-                                </Link>
+                                    <a href="https://www.youtube.com/playlist?list=PLvF5bPYH6JFu_34MNVQHe5wZCPTaip-sZ">
+                                        <img src={ImagePaths.linkImg_2} alt="" />
+                                    </a>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={ImagePaths.linkImg_3} alt="" />
+                                <a href="https://www.youtube.com/playlist?list=PLvF5bPYH6JFsrlQWcDGd6S7u5cXxM6Tau">
+                                    <img src={ImagePaths.linkImg_3} alt="" />
+                                </a>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={ImagePaths.linkImg_4} alt="" />
+                                <a href="https://www.youtube.com/playlist?list=PLvF5bPYH6JFuTuezxnIwgsgF55bcuJXeE">
+                                    <img src={ImagePaths.linkImg_4} alt="" />
+                                </a>
                             </SwiperSlide>
 
 
