@@ -11,3 +11,8 @@
     padding-left:8px;
 }
 }
+
+.linkActive {
+    color: var(--threed-color);
+    font-weight: 500;
+}

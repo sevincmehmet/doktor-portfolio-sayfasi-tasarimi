@@ -128,10 +128,10 @@ function Navbars({
                                     <ul>
                                         <li >
                                             <Link
-                                                activeClass="active"
-                                                className={scroolActive ? "nav-link" : "nav-link active"}
+                                                className="nav-link"
                                                 offset={offsetNumber}
-                                                onClick={() => { setSideBarActive(!sideBarActive); navigate("/") }}
+                                                onClick={() => { setSideBarActive(!sideBarActive); 
+                                                navigate("/") }}
                                                 spy to="home"
                                             >
                                                 Anasayfa

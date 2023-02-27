@@ -17,12 +17,9 @@ const AllQuestions = ({
     const questionsData = Questions
 
 
-    useEffect(() => {
-    
-    }, [questionsData])
-
 useEffect(() => {
     setScroolActive(true)
+    document.getElementById('sorulariniz').classList.add('linkActive')
 }, [scroolActive])
 
 
