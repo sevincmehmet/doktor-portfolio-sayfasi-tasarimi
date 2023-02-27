@@ -21,10 +21,14 @@
 }
 
 #services,
-#allQuestions,
 #contacts {
    background: var(--main-color); 
 }  */
+
+#allQuestions {
+  background: var(--main-color); 
+}
+
 #videos,
 #home,
 #contacts,
