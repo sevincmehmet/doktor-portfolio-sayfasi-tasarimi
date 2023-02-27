@@ -126,8 +126,11 @@
         transform: scale(1) ;
         transform-origin: center; 
     }
+    #home-bottom {
+        margin-top: 5rem;
+    }
   }
-
+  
 
   /* @media (max-width: 413.98px) {
     #img-container {
