@@ -8,6 +8,7 @@ import Reviews from "./Reviews";
 import Contacts from "./Contacts";
 import ScrollToTop from "./ScrollToTop";
 import Videos from "./Videos";
+import HealthService from "./HealtService"
 import backgroundImages from "./assets/header_background.png"
 
 import "../App.css";
@@ -46,16 +47,13 @@ const Main = ({
 
     return (
         <div id="main">
-            {/* <div id="home-bg-img" className="position-absolute">
-                <img src={backgroundImages} height={900}/>
-            </div> */}
             <ScrollToTop />
             <Navbar
                 scroolActive={scroolActive}
                 setScroolActive={setScroolActive}
             />
-
-            <section className="main-item" id="home"><Home /> </section>
+            <section  id="home" style={{paddingBottom:"0"}}><Home /> </section>
+            <section id="healthServices" style={{paddingBottom:"100px"}}><HealthService /></section>
             <section className="main-item" id="about"><About /></section>
             <section className="main-item" id="videos"><Videos /></section>
             <section className="main-item" id="services"><Services /></section>

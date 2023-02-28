@@ -23,14 +23,14 @@ const AllVideos = ({
         for (let i = 0; i < document.getElementsByClassName('sidebar-item').length; i++) {
             if (activeId == i) {
                 document.getElementById(activeId).classList.add('sidebarActive');
-                document.getElementById(activeId).style.cssText = "font-size:16px;color:var(--black-color)"
+                document.getElementById(activeId).style.cssText = "font-size:16px;"
+
+                document.getElementById(activeId).getElementsByClassName('circleIcon')[0].classList.remove('d-none')
             } else {
                 document.getElementById(i).classList.remove('sidebarActive')
+                document.getElementById(i).getElementsByClassName('circleIcon')[0].classList.add('d-none')
                 document.getElementById(i).style.cssText = "font-size:16px;"
             }
-
-            // activeId == i ? document.getElementById(activeId).classList.add('sidebarActive')
-            //     : document.getElementById(i).classList.remove('sidebarActive')
         }
     }, [activeId])
 
@@ -53,11 +53,10 @@ const AllVideos = ({
                                     <ul>
                                         {arrVideoCategory.map((oItem, oIndex) => {
 
-                                            return <li key={oIndex} className="h5 fw-normal m-1">
+                                            return <li key={oIndex} id={oIndex} className="h5 fw-normal">
                                                 <a
-                                                    id={oIndex}
                                                     style={{ fontSize: "16px" }}
-                                                    className="rounded p-4 sidebar-item d-flex align-items-center justify-content-between"
+                                                    className="rounded p-3 sidebar-item d-flex align-items-center justify-content-between"
                                                     href="#"
                                                     onClick={() => {
                                                         setData(oItem.catagoryVideos);
@@ -65,7 +64,8 @@ const AllVideos = ({
                                                     }}
                                                 >
                                                     <div className="sidebar-title pe-4 text-truncate">
-                                                        {oItem.catagoryTitle}
+                                                        <i className="align-item-center ps-1 pe-2 fa-solid d-none fa-circle circleIcon" ></i>
+                                                        <span>{oItem.catagoryTitle}</span>
                                                     </div>
                                                     <div style={{ color: "lightgray" }} className="sidebar-length ">
                                                         {oItem.catagoryVideos.length}

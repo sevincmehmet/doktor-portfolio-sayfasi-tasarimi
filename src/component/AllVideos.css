@@ -1,8 +1,10 @@
 .sidebarActive {
     background-color: var(--second-color);
     box-shadow: rgba(0, 0, 0, 0.141) 0px 3px 5px;
-    padding-left: 5px;
-    color: var(--black-color);
+}
+li.sidebarActive a .sidebar-title{
+    color: var(--threed-color);
+    font-weight:500;
 }
 
 #sidebar {
@@ -14,11 +16,15 @@
     padding-left: 0;
     padding-right:0 ;
 }
+
+#sidebar li {
+    border-bottom: 1px solid #828ca55f;
+}
 #sidebar li a{
-    color: #11295092;
+    color: #828ca5;
 }
 #sidebar li a:hover {
-    color: var(--black-color);
+    color: #177ee5e1;
 }
 
 .allVideos {
@@ -56,6 +62,11 @@
     left: 5px;
 }
 
+.circleIcon {
+    font-size: 0.5rem;
+    position: relative;
+    bottom: 0.1rem;
+}
 
 @media (max-width: 1199.98px) {
     #sidebar {

@@ -4,22 +4,29 @@
   font-family: Epilogue, sans-serif;
   /* text-align: center; */
 }
-#main {
-  background: url(./component/assets/header_background.png);
-  background-size: 100% 140vh;
-  background-repeat: no-repeat ;
-  background-position-y: -11rem;
-}
+
+/* ! scrollbarı gizler */
+/* ::-webkit-scrollbar {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  background-color: transparent;
+} */
+
 .container-width {
   max-width: 1080px;
   margin: 0 auto;
   height: 100%;
 }
 
-.main-item:nth-child(odd) {
+.main-item:nth-child(even) {
   background-color: var(--main-color);
 }
 
+#home {
+  background: url(./component/assets/header_background.png);
+  background-size:contain;
+}
 
 /* #home {
    background: var(--main-color); 
