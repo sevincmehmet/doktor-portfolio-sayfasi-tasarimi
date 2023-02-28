@@ -82,7 +82,7 @@ const AllVideos = ({
                                         {
                                             data.map((oItem, oIndex) => {
                                                 return <div key={oIndex} className="video-cont col-xxl-6 col-xl-12 p-3 ">
-                                                    <div id="videos-text-container" style={{ height: "auto" }}>
+                                                    <div id="videos-text-container" style={{ height: "90px" }}>
                                                         <div className="blurb-title text-start"><h3 style={{ fontSize: "18px" }}>{oItem.vidoTitle}</h3></div>
                                                         <div className="blurb-text text-start pb-3 ">{oItem.videoArticle}</div>
 
