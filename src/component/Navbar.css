@@ -6,11 +6,10 @@
     position: -webkit-sticky;
     position: sticky;
     top: 0px;   
-    z-index: 99999;
     height: 90px;
     min-height: 60px;
-    z-index: 9999999;
-    background-color: var(--second-color);  
+    z-index: 99;
+    background-color: rgb(255, 255, 255);  
     width: 100%;
     transition: height 0.2s, box-shadow 0.2s;
     align-items: center;
@@ -23,11 +22,11 @@
     position: -webkit-sticky;
     position: sticky;
     top: 0px;   
-    z-index: 9999;
+    z-index: 99;
     height: 104px;
     min-height: 70px;
     z-index: 999;
-    background-color: var(--second-color);  
+    background-color: transparent;  
     margin: 0 auto;
     box-shadow: 0 0 28px rgb(130 140 165 / 10%);
 }

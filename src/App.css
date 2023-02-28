@@ -4,7 +4,12 @@
   font-family: Epilogue, sans-serif;
   /* text-align: center; */
 }
-
+#main {
+  background: url(./component/assets/header_background.png);
+  background-size: 100% 140vh;
+  background-repeat: no-repeat ;
+  background-position-y: -11rem;
+}
 .container-width {
   max-width: 1080px;
   margin: 0 auto;

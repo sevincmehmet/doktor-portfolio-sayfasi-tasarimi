@@ -8,6 +8,7 @@ import Reviews from "./Reviews";
 import Contacts from "./Contacts";
 import ScrollToTop from "./ScrollToTop";
 import Videos from "./Videos";
+import backgroundImages from "./assets/header_background.png"
 
 import "../App.css";
 
@@ -44,7 +45,10 @@ const Main = ({
     }, [])
 
     return (
-        <>
+        <div id="main">
+            {/* <div id="home-bg-img" className="position-absolute">
+                <img src={backgroundImages} height={900}/>
+            </div> */}
             <ScrollToTop />
             <Navbar
                 scroolActive={scroolActive}
@@ -71,7 +75,8 @@ const Main = ({
                     : <>
                     </>
                 }
-            </section></>
+            </section>
+        </div>
     )
 }
 export default Main;

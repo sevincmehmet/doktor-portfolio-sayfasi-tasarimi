@@ -6,7 +6,7 @@ import "./Home.css";
 const Home = () => {
   return (
     <>
-      <div className="container">
+      <div id="home-container" className="container">
         <div
           className="row row-30 justify-content-center justify-content-md-between flex-md-row-reverse justify-content-xxl-center
 "
