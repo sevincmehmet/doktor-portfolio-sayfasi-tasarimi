@@ -53,7 +53,7 @@ const Main = ({
                 setScroolActive={setScroolActive}
             />
             <section  id="home" style={{paddingBottom:"0"}}><Home /> </section>
-            <section id="healthServices" style={{paddingBottom:"100px"}}><HealthService /></section>
+            <section id="healthServices" style={{padding:"100px 0"}}><HealthService /></section>
             <section className="main-item" id="about"><About /></section>
             <section className="main-item" id="videos"><Videos /></section>
             <section className="main-item" id="services"><Services /></section>
