@@ -24,10 +24,21 @@
 }
 
 #home {
-  background: url(./component/assets/header_background.png);
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  position: relative;
 }
+#home::before {
+  content: "";
+  background-image: url('./component/assets/header_background.png');
+  background-repeat:no-repeat ;
+  background-size: 100% auto;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.75;
+  z-index: -1;
+  } 
 
 /* #home {
    background: var(--main-color); 

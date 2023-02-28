@@ -25,10 +25,8 @@ const AllVideos = ({
                 document.getElementById(activeId).classList.add('sidebarActive');
                 document.getElementById(activeId).style.cssText = "font-size:16px;"
 
-                document.getElementById(activeId).getElementsByClassName('circleIcon')[0].classList.remove('d-none')
             } else {
                 document.getElementById(i).classList.remove('sidebarActive')
-                document.getElementById(i).getElementsByClassName('circleIcon')[0].classList.add('d-none')
                 document.getElementById(i).style.cssText = "font-size:16px;"
             }
         }
@@ -64,7 +62,7 @@ const AllVideos = ({
                                                     }}
                                                 >
                                                     <div className="sidebar-title pe-4 text-truncate">
-                                                        <i className="align-item-center ps-1 pe-2 fa-solid d-none fa-circle circleIcon" ></i>
+                                                        <i className="align-item-center ps-1 pe-2 fa-solid fa-circle circleIcon" ></i>
                                                         <span>{oItem.catagoryTitle}</span>
                                                     </div>
                                                     <div style={{ color: "lightgray" }} className="sidebar-length ">
@@ -83,10 +81,10 @@ const AllVideos = ({
                                     <div className="row">
                                         {
                                             data.map((oItem, oIndex) => {
-                                                return <div key={oIndex} className="video-cont col-lg-6 col-md-12 p-3 ">
-                                                    <div id="videos-text-container" style={{ height: "110px" }}>
-                                                        <div className="blurb-title text-center"><h3 style={{ fontSize: "18px" }}>{oItem.vidoTitle}</h3></div>
-                                                        <div className="blurb-text text-center pt-2 pb-2">{oItem.videoArticle}</div>
+                                                return <div key={oIndex} className="video-cont col-xxl-6 col-xl-12 p-3 ">
+                                                    <div id="videos-text-container" style={{ height: "auto" }}>
+                                                        <div className="blurb-title text-start"><h3 style={{ fontSize: "18px" }}>{oItem.vidoTitle}</h3></div>
+                                                        <div className="blurb-text text-start pb-3 text-truncate">{oItem.videoArticle}</div>
 
                                                     </div>
                                                     <iframe id="videos-container" src={oItem.videoUrl} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>

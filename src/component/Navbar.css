@@ -13,7 +13,8 @@
     width: 100%;
     transition: height 0.2s, box-shadow 0.2s;
     align-items: center;
-    box-shadow: 0 0 28px rgb(130 140 165 / 10%);
+        box-shadow: 0 0 28px rgba(0, 0, 0, 0.093);
+
 }
 .nav {
     transition: height 0.2s, box-shadow 0.2s;
@@ -28,7 +29,8 @@
     z-index: 999;
     background-color: transparent;  
     margin: 0 auto;
-    box-shadow: 0 0 28px rgb(130 140 165 / 10%);
+        box-shadow: 0 0 28px rgba(0, 0, 0, 0.062);
+
 }
 .nav__container {
     display: flex;
