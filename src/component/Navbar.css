@@ -55,8 +55,7 @@
     top: 6px;
 }
 .logo img {
-    height: 70px;
-    width: 70px;
+    width: 60px;
 }
 
 .navbar-spaces {
@@ -77,7 +76,6 @@ Nav ul {
 }
 
 Nav li {
-    cursor: pointer;
     align-items: center;
     margin: 0 6px;
     display: flex;
@@ -130,7 +128,7 @@ button:focus:not(:focus-visible) {
     box-shadow:none;
 }
 .offcanvas ul li a {
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .dot-modal {
@@ -207,6 +205,7 @@ top: 0px;
 .nav-link {
     color: var(--black-color);
     padding: 0;
+    cursor: pointer;
 }
 .nav-link:hover,
 .active:hover {
@@ -229,11 +228,10 @@ top: 0px;
         display: flex;
         position: absolute;
         left: calc(50% - 30px);
-        top: calc(50% - 24px);
+        top: calc(50% - 20px);
     }
     .logo img {
-        height: 63px;
-        width: 63px;
+        width: 55px;
     }
     .navActive{
         height: 80px;

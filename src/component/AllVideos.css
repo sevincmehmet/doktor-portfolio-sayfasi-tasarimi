@@ -1,12 +1,12 @@
 li.sidebarActive a .sidebar-title{
     color: var(--threed-color);
-    font-weight:500;
 }
 
 #sidebar {
     border-radius: 5px;
     margin-top: 2rem;
     min-width: 250px;
+    width: 350px;
     min-height: calc(100vh - 90px);
     background-color: transparent;
     padding-left: 0;
@@ -37,20 +37,19 @@ li.sidebarActive a .sidebar-title{
 #videos-text-container,
 #videos-container {
     width: 100%;
-    height: auto;
 }
 
 
-#videos-text-container,
+/* #videos-text-container,
 #videos-container {
     height: 300px;
-}
+} */
 
 
 .videos-section {
     min-height: calc(100vh - 90px);
     min-width: 320px;
-    max-width: calc(100% - 250px);
+    max-width: calc(100% - 350px);
     background-color: var(--main-color);
     padding-right:0;  
     padding-top: 1rem ;
@@ -65,38 +64,36 @@ li.sidebarActive a .sidebar-title{
 }
 
 @media (max-width: 1399.98px) {
-    #videos-text-container,
+    /* #videos-text-container,
     #videos-container {
         height: 500px;
-    }
+    } */
 }
 @media (max-width: 1199.98px) {
     #sidebar {
         width: 250px;
     }
     .videos-section {
-        padding-top: 0;
-        margin-top: 1rem;
-        width: calc(100% - 250px);
+       max-width: initial;
     }
     .sidebar {
         position: absolute;
         top: 80px;
     }
-    #videos-text-container,
+    /* #videos-text-container,
     #videos-container {
         height: 230px;
-    }
+    } */
     .video-cont {
         height: auto;
     }
     /* .allVideos {
         padding-left: 8px;
     } */
-    #videos-text-container,
+    /* #videos-text-container,
     #videos-container {
         height: 400px;
-    }
+    } */
     
 }
 
@@ -104,10 +101,10 @@ li.sidebarActive a .sidebar-title{
     .main-cont {
     min-width: 100%;
     }
-    #videos-text-container,
+    /* #videos-text-container,
     #videos-container {
         height: 200px;
-    }
+    } */
     .videos-section {
     position: relative;
     left: 5px;
@@ -117,10 +114,10 @@ li.sidebarActive a .sidebar-title{
 }
 @media (max-width: 991.98px) {
     
-    #videos-text-container,
+    /* #videos-text-container,
     #videos-container {
         height: 310px;
-    }
+    } */
 }
 
 @media (max-width: 749.98px) {

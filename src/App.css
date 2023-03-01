@@ -36,8 +36,10 @@
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 0.75;
+  opacity: .5;
   z-index: -1;
+  background-position: center 75%;
+  background-attachment: scroll;
   } 
 
 /* #home {
@@ -48,6 +50,9 @@
 #contacts {
    background: var(--main-color); 
 }  */
+#allQuestions {
+  padding: 52px 0;
+}
 #allVideos,
 #allQuestions {
   background: var(--main-color); 
@@ -59,7 +64,6 @@
 #home,
 #contacts,
 #reviews,
-#allQuestions,
 #services,
 #about {
   padding: 100px 0;
