@@ -69,7 +69,7 @@ const Contacts = () => {
                                 {/**********************Ekranın Sağ Tarafı*********************************/}
                                 <div className="col-sm-11 col-md-6">
                                     <div className="form-box">
-                                        <h2 className="contacts-title">Randevu Formu </h2>
+                                        <h2 className="contacts-title">İletişim Formu </h2>
                                         <form
                                             className="rd-form rd-mailform"
                                             data-form-output="contact-form"
@@ -128,7 +128,7 @@ const Contacts = () => {
                                             <div className="custom-control custom-checkbox"></div>
                                             <div className="rd-form-btn text-start">
                                                 <button className="btn btn-lg btn-block" type="button">
-                                                Randevu Al
+                                                Gönder
                                                 </button>
                                             </div>
                                         </form>

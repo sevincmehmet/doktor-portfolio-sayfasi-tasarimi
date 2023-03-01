@@ -206,6 +206,7 @@ top: 0px;
     color: var(--black-color);
     padding: 0;
     cursor: pointer;
+    font-weight: 500;
 }
 .nav-link:hover,
 .active:hover {
@@ -264,7 +265,7 @@ top: 0px;
     .offcanvas ul li { 
         list-style: none;
         color: var(--black-color);
-        font-weight: 400;
+        font-weight: 500;
         border-bottom: 1px solid #e5e5e5 ;
         width: 100%;
     }
