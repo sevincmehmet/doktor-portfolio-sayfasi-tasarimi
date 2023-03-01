@@ -7,9 +7,9 @@ import Contacts from "./Contacts";
 import ScrollToTop from "./ScrollToTop";
 import Videos from "./Videos";
 import HealthService from "./HealtService"
-import Maps from "./Maps"
-
+import GoogleMaps from "./GoogleMaps";
 import "../App.css";
+
 
 
 
@@ -32,7 +32,7 @@ const Main = ({
             <section className="main-item" id="services"><Services /></section>
             <section className="main-item" id="reviews"><Reviews /></section>
             <section className="main-item" id="contacts"><Contacts /></section>
-            <section className="maps-container"><Maps /></section>
+            <section className="maps-container"><GoogleMaps /></section>
         </div>
     )
 }

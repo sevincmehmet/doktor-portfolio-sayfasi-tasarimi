@@ -4,16 +4,6 @@
   font-family: Epilogue, sans-serif;
   /* text-align: center; */
 }
-/* .container {
-  padding-left: initial ;
-} */
-/* ! scrollbarı gizler */
-/* ::-webkit-scrollbar {
-  display: none;
-  visibility: hidden;
-  opacity: 0;
-  background-color: transparent;
-} */
 
 .container-width {
   max-width: 1080px;
