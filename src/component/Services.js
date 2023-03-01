@@ -19,7 +19,7 @@ const Services = () => {
                 <div className="row">
                     <div className="col-xxl-10 col-xl-11 col-md-11 col-sm-12 m-auto">
                         <div className="container">
-                            <h2 className="services-title">
+                            <h2 className="services-title" style={{padding:"0"}}>
                                 Sorular ve Cevaplarla
                                 Medikal Hizmetler</h2>
                             <br />
