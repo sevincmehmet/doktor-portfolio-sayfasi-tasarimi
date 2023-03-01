@@ -4,6 +4,7 @@
 #home-img {
     transform: scale(0.8) ;
     transform-origin: top right; 
+    cursor: auto;
 }
 .home-title {
     font-size: 56px;
@@ -52,7 +53,6 @@
 #home-img {
     display: block;
     margin: auto;
-    cursor: zoom-in;
     background-color: hsl(0, 0%, 90%);
     transition: background-color 300ms;
     width: 100%;

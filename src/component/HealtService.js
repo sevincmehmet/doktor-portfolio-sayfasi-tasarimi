@@ -3,7 +3,7 @@ const HealtService = () => {
         <>
             <div id="home-bottom" className="container">
                 <h2 className="home-title text-center" style={{ fontSize: "31.5px" }}>
-                    Sağlık Hizmetlerim
+                    Sağlık Hizmetleri
                 </h2>
                 <br />
                 <div className="row row-30">

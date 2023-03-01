@@ -4,7 +4,9 @@
   font-family: Epilogue, sans-serif;
   /* text-align: center; */
 }
-
+.container {
+  padding-left: initial ;
+}
 /* ! scrollbarı gizler */
 /* ::-webkit-scrollbar {
   display: none;
@@ -51,7 +53,7 @@
    background: var(--main-color); 
 }  */
 #allQuestions {
-  padding: 52px 0;
+  padding-bottom: 52px;
 }
 #allVideos,
 #allQuestions {

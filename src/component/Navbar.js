@@ -5,8 +5,8 @@ import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "./assets/site-logo.png"
-import { Link }  from "react-scroll";
-import { Link as LinkRou} from "react-router-dom";
+import { Link } from "react-scroll";
+import { Link as LinkRou } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 
@@ -89,8 +89,7 @@ function Navbars({
                         setDotClick(!dotClick);
                         navigate("/");
                     }}>
-                        Randevu Al
-                    </Link>
+                        İletişim                    </Link>
                 </div>
                 <Navbar
                     key={"xl"}
@@ -130,14 +129,16 @@ function Navbars({
                                             <Link
                                                 className="nav-link"
                                                 offset={offsetNumber}
-                                                onClick={() => { setSideBarActive(!sideBarActive); 
-                                                navigate("/") }}
+                                                onClick={() => {
+                                                    setSideBarActive(!sideBarActive);
+                                                    navigate("/")
+                                                }}
                                                 spy to="home"
                                             >
                                                 Anasayfa
                                             </Link>
                                         </li>
-                                        
+
                                         <li>
                                             <LinkRou
                                                 id="videolar"
@@ -157,7 +158,7 @@ function Navbars({
                                                 className="nav-link"
                                                 offset={offsetNumber}
                                                 onClick={() => { setSideBarActive(!sideBarActive); navigate("/") }}
-                                             to="/allQuestions"
+                                                to="/allQuestions"
                                             >
                                                 Sorularınız
                                             </LinkRou>
@@ -171,8 +172,8 @@ function Navbars({
                                                 className="nav-link btn btn-primary"
                                                 onClick={() => { setSideBarActive(!sideBarActive); navigate("/") }}
                                                 spy to="contacts">
-                                                Randevu Al
-                                            </Link>
+                                                İletişim                                            
+                                                </Link>
                                         </li>
                                     </ul>
                                 </Nav>

@@ -41,9 +41,10 @@ const AllVideos = ({
                 setScroolActive={setScroolActive}
             />
             <div className="container main-cont">
+
                 <div className="row">
+            <h2 className="services-title" >Videolarla Medikal Hizmetler </h2>
                     <div className="col-xxl-10 col-xl-12 col-md-12 m-auto ">
-                    <h2 class="services-title pt-4 mt-4">Videolu Anlatımlarla Medikal Hizmetler</h2>
                         <div className="container-fluid">
 
                             <div className="row ">
@@ -83,12 +84,12 @@ const AllVideos = ({
                                         {
                                             data.map((oItem, oIndex) => {
                                                 return <div key={oIndex} className="video-cont col-sm-12 p-3 ">
-                                                    <div id="videos-text-container" style={{ minHeight: "90px" }}>
+                                                    <div id="videos-text-container" style={{ minHeight: "90px",maxHeight:"95px" }}>
                                                         <div className="blurb-title text-start"><h3 style={{ fontSize: "18px" }}>{oItem.vidoTitle}</h3></div>
                                                         <div className="blurb-text text-start pb-3 ">{oItem.videoArticle}</div>
 
                                                     </div>
-                                                    <iframe id="videos-container" src={oItem.videoUrl} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                                                    <iframe  frameBorder="0" scrolling="no" id="videos-container" src={oItem.videoUrl} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
                                                 </div>
                                             })

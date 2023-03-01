@@ -12,11 +12,14 @@ import "./Videos.css";
 
 // import required modules
 import { EffectCoverflow, Pagination } from "swiper";
-import {Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 import ImagePaths from "./assets/images/ImagePaths";
+import SwiperCore, { Autoplay } from 'swiper';
+
 
 const Videos = () => {
-
+    
+    SwiperCore.use([Autoplay]);
 
 
     return (
@@ -25,13 +28,16 @@ const Videos = () => {
                 <div className="row">
                     <div className="col-xxl-10 col-xl-11 col-md-11 col-sm-12 m-auto">
 
-                    <h2 className="home-title text-center" style={{fontSize: "31.5px"}}>Öne Çıkan Videolar</h2>
+                        <h2 className="home-title text-center" style={{ fontSize: "31.5px" }}>Öne Çıkan Videolar</h2>
                         <Swiper
-                          initialSlide="1"
+                            initialSlide="1"
                             effect={"coverflow"}
                             grabCursor={true}
                             centeredSlides={true}
                             slidesPerView={"auto"}
+                            autoplay= {{
+                                delay: 2500
+                            }}
                             coverflowEffect={{
                                 rotate: 50,
                                 stretch: 0,
@@ -54,9 +60,9 @@ const Videos = () => {
                                 </a>
                             </SwiperSlide>
                             <SwiperSlide>
-                                    <a target={"_blank"} href="https://www.youtube.com/playlist?list=PLvF5bPYH6JFu_34MNVQHe5wZCPTaip-sZ">
-                                        <img src={ImagePaths.linkImg_2} alt="" />
-                                    </a>
+                                <a target={"_blank"} href="https://www.youtube.com/playlist?list=PLvF5bPYH6JFu_34MNVQHe5wZCPTaip-sZ">
+                                    <img src={ImagePaths.linkImg_2} alt="" />
+                                </a>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <a target={"_blank"} href="https://www.youtube.com/playlist?list=PLvF5bPYH6JFsrlQWcDGd6S7u5cXxM6Tau">
