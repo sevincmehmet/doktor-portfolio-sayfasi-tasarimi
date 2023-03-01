@@ -36,10 +36,10 @@ useEffect(() => {
                 <div className="container">
                 
                     <div className="row">
+                    <div className="col-xxl-10 col-xl-12 col-md-12 m-auto ">
                     <h2 className="services-title">
                                     Sorular ve Cevaplarla
                                     Medikal Hizmetler</h2>
-                        <div className="col-xxl-10 col-xl-12 col-md-12 m-auto">
                             <div className="container">
                                 <br />
                                 <Accordion defaultActiveKey="1">

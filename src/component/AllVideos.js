@@ -43,13 +43,13 @@ const AllVideos = ({
             <div className="container main-cont">
 
                 <div className="row">
-            <h2 className="services-title" >Videolarla Medikal Hizmetler </h2>
                     <div className="col-xxl-10 col-xl-12 col-md-12 m-auto ">
+            <h2 className="services-title" >Videolarla Medikal Hizmetler </h2>
                         <div className="container-fluid">
 
-                            <div className="row ">
+                            <div className="row allVideos-container">
                                 {/* sideBar */}
-                                <div id="sidebar" className="col-xl-2 col-md-4 col-sm-4">
+                                <div id="sidebar" className="col-xl-3 col-md-4 col-sm-12">
                                     <ul>
                                         {arrVideoCategory.map((oItem, oIndex) => {
 
@@ -78,7 +78,7 @@ const AllVideos = ({
                                 </div>
 
                                 {/* Video Bölümü */}
-                                <div className="videos-section col-xl-10 col-md-8 col-sm-12 ">
+                                <div className="videos-section col-xl-9 col-md-8 col-sm-12 ">
 
                                     <div className="row">
                                         {

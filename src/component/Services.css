@@ -2,7 +2,7 @@
     color: var(--black-color);
     font-size: 31.5px;
     font-weight: 600;
-    padding:3rem 0 0 8.27rem;
+    padding:3rem 0 0 0;
     /* position: relative;
     right: 8px; */
 }
@@ -97,14 +97,4 @@
     box-shadow: none;
 }
 
-@media (max-width: 1399.98px) {
-    .services-title {
-        padding:3rem 0 0 .5rem;
-    }
-}
-@media (max-width: 991.98px) {
-.main-cont .services-title {
-    padding-left: 2rem;
-}
 
-}
