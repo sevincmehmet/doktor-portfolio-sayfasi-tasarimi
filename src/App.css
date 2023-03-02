@@ -52,6 +52,7 @@
 #allVideos {
   position: relative;
 }
+#socialChannels,
 #videos,
 #home,
 #contacts,
@@ -89,6 +90,7 @@
 }
 
 @media (max-width: 575.98px) {
+  #socialChannels,
   #videos,
   #home,
   #contacts,

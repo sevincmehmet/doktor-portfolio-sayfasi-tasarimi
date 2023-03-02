@@ -15,10 +15,11 @@ import { EffectCoverflow, Pagination } from "swiper";
 import { Link } from "react-router-dom"
 import ImagePaths from "./assets/images/ImagePaths";
 import SwiperCore, { Autoplay } from 'swiper';
+import { Navigation } from "swiper";
 
 
 const Videos = () => {
-    
+
     SwiperCore.use([Autoplay]);
 
 
@@ -26,10 +27,10 @@ const Videos = () => {
         <>
             <div className="container">
                 <div className="row">
-                    <div className="col-xxl-10 col-xl-11 col-md-11 col-sm-12 m-auto">
+                    <div className="col-xxl-8 col-xl-9 col-md-10 col-sm-12 m-auto">
 
                         <h2 className="home-title text-center" style={{ fontSize: "31.5px" }}>Öne Çıkan Videolar</h2>
-                        <Swiper
+                        {/* <Swiper
                             initialSlide="1"
                             effect={"coverflow"}
                             grabCursor={true}
@@ -76,8 +77,64 @@ const Videos = () => {
                             </SwiperSlide>
 
 
-                        </Swiper>
+                        </Swiper> */}
+                        <Swiper
+                            slidesPerView={1}
+                            spaceBetween={30}
+                            loop={true}
+                            pagination={{
+                                clickable: true,
+                            }}
+                            autoplay= {{
+                                delay: 2500
+                            }}
+                            navigation={true}
+                            modules={[Pagination, Navigation]}
+                            className="mySwiper"
+                        >
+                            <SwiperSlide>
+                                <a target={"_blank"} href="https://www.youtube.com/playlist?list=PLvF5bPYH6JFtL_KkueBX0ciGw3l5Lgd1E">
+                                    <img src={ImagePaths.linkImg_0} alt="" />
+                                </a>
 
+
+
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <a target={"_blank"} href="https://www.youtube.com/playlist?list=PLvF5bPYH6JFu7py7CG_yLsZGcAj5zXojI">
+                                    <img src={ImagePaths.linkImg_1} alt="" />
+                                </a>
+
+
+
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <a target={"_blank"} href="https://www.youtube.com/playlist?list=PLvF5bPYH6JFu_34MNVQHe5wZCPTaip-sZ">
+                                    <img src={ImagePaths.linkImg_2} alt="" />
+                                </a>
+
+
+
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <a target={"_blank"} href="https://www.youtube.com/playlist?list=PLvF5bPYH6JFsrlQWcDGd6S7u5cXxM6Tau">
+                                    <img src={ImagePaths.linkImg_3} alt="" />
+                                </a>
+
+
+
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <a target={"_blank"} href="https://www.youtube.com/playlist?list=PLvF5bPYH6JFuTuezxnIwgsgF55bcuJXeE">
+                                    <img src={ImagePaths.linkImg_4} alt="" />
+                                </a>
+
+
+
+                            </SwiperSlide>
+
+
+                        </Swiper>
                     </div>
                 </div>
             </div>

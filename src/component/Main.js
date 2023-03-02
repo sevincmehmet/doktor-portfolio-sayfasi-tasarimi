@@ -8,6 +8,7 @@ import ScrollToTop from "./ScrollToTop";
 import Videos from "./Videos";
 import HealthService from "./HealtService"
 import GoogleMaps from "./GoogleMaps";
+import SocialChannels from "./SocialChannels"
 import "../App.css";
 
 
@@ -30,7 +31,8 @@ const Main = ({
             <section className="main-item" id="about"><About /></section>
             <section className="main-item" id="videos"><Videos /></section>
             <section className="main-item" id="services"><Services /></section>
-            <section className="main-item" id="reviews"><Reviews /></section>
+            {/* <section className="main-item" id="reviews"><Reviews /></section> */}
+            <section id="socialChannels"><SocialChannels/></section>
             <section className="main-item" id="contacts"><Contacts /></section>
             <section className="maps-container"><GoogleMaps /></section>
         </div>
