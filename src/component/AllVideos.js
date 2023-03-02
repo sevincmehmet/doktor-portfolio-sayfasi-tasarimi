@@ -83,13 +83,13 @@ const AllVideos = ({
                                     <div className="row">
                                         {
                                             data.map((oItem, oIndex) => {
-                                                return <div key={oIndex} className="video-cont col-sm-12 p-3 ">
+                                                return <div key={oIndex} className="col-sm-12 p-3 ">
                                                     <div id="videos-text-container" style={{ minHeight: "90px",maxHeight:"95px" }}>
                                                         <div className="blurb-title text-start"><h3 style={{ fontSize: "18px" }}>{oItem.vidoTitle}</h3></div>
                                                         <div className="blurb-text text-start pb-3 ">{oItem.videoArticle}</div>
 
                                                     </div>
-                                                    <iframe  frameBorder="0" scrolling="no" id="videos-container" src={oItem.videoUrl} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                                                    <iframe style={{height:"20rem"}} frameBorder="0" scrolling="no" id="videos-container" src={oItem.videoUrl} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
                                                 </div>
                                             })

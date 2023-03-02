@@ -27,18 +27,19 @@ const Videos = () => {
         <>
             <div className="container">
                 <div className="row">
-                    <div className="col-xxl-8 col-xl-9 col-md-10 col-sm-12 m-auto">
+                    <div className="offset-xxl-1 col-xxl-10 offset-xxl-1 ">
 
                         <h2 className="home-title text-center" style={{ fontSize: "31.5px" }}>Öne Çıkan Videolar</h2>
-                        {/* <Swiper
+                        <Swiper
                             initialSlide="1"
                             effect={"coverflow"}
                             grabCursor={true}
                             centeredSlides={true}
                             slidesPerView={"auto"}
                             autoplay= {{
-                                delay: 2500
+                                delay: 3500
                             }}
+                            loop={true}
                             coverflowEffect={{
                                 rotate: 50,
                                 stretch: 0,
@@ -77,9 +78,9 @@ const Videos = () => {
                             </SwiperSlide>
 
 
-                        </Swiper> */}
-                        <Swiper
-                            slidesPerView={2}
+                        </Swiper>
+                        {/* <Swiper
+                            slidesPerView={3}
                             spaceBetween={30}
                             loop={true}
                             pagination={{
@@ -134,7 +135,7 @@ const Videos = () => {
                             </SwiperSlide>
 
 
-                        </Swiper>
+                        </Swiper> */}
                     </div>
                 </div>
             </div>
