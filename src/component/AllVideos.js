@@ -49,8 +49,8 @@ const AllVideos = ({
 
                             <div className="row allVideos-container">
                                 {/* sideBar */}
-                                <div id="sidebar" className="col-xl-3 col-md-4 col-sm-12">
-                                    <ul>
+                                <div id="sidebar" className=" col-xl-3 col-md-4 col-sm-12">
+                                    <ul className="position-fixed">
                                         {arrVideoCategory.map((oItem, oIndex) => {
 
                                             return <li key={oIndex} id={oIndex} className="h5 fw-normal">
