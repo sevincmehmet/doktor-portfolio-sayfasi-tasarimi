@@ -4,6 +4,10 @@ import "./AllVideos.css";
 import arrVideoCategory from "./arrVideoCategory";
 import ScrollToTop from "./ScrollToTop"
 import Navbar from "./Navbar"
+import Combobox from "react-widgets/Combobox";
+import "react-widgets/styles.css";
+
+
 
 const AllVideos = ({
     scroolActive,
@@ -11,6 +15,7 @@ const AllVideos = ({
 }) => {
     const [data, setData] = useState(arrVideoCategory[0].catagoryVideos);
     const [activeId, setActiveId] = useState(0)
+    // const [dataTitle, setDataTitle] = useState[[]];
 
 
     useEffect(() => {
@@ -30,7 +35,16 @@ const AllVideos = ({
                 document.getElementById(i).style.cssText = "font-size:16px;"
             }
         }
+
     }, [activeId])
+
+    var selectBox = document.getElementById("selectBox");
+
+    function changeFunc() {
+
+        var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+        setData(arrVideoCategory[selectedValue].catagoryVideos);
+    }
 
     return (
         <div id="allVideos">
@@ -44,12 +58,12 @@ const AllVideos = ({
 
                 <div className="row">
                     <div className="col-xxl-10 col-xl-12 col-md-12 m-auto ">
-            <h2 className="services-title" >Videolarla Medikal Hizmetler </h2>
+                        <h2 className="services-title" >Videolarla Medikal Hizmetler </h2>
                         <div className="container-fluid">
 
                             <div className="row allVideos-container">
                                 {/* sideBar */}
-                                <div id="sidebar" className=" col-xl-3 col-md-4 col-sm-12">
+                                <div id="sidebar" className=" col-xl-3 col-md-4 col-sm-12 col-xs-12">
                                     <ul>
                                         {arrVideoCategory.map((oItem, oIndex) => {
 
@@ -75,21 +89,49 @@ const AllVideos = ({
 
                                         })}
                                     </ul>
+                                    <div id="combobox"
+                                    >
+                                        {/* <Combobox
+                                            defaultValue="Aşı"
+                                            data={["Aşı", "Hafta Hafta Gelişim", "Çocukluk Çağı Hastalıkları", "Sağlıklı Yaşam ve Fitnesil", "Uyku Eğitimleri", "Çocuklarda Davranış Eğitimi", "Otizm ve Hiperaktivite"]}
+                                        /> */}
+                                        <div className="custom-select">
+                                        <select id="selectBox" onChange={() => {
+                                            changeFunc()
+                                        }}>
+                                                {arrVideoCategory.map((oItem, oIndex) => {
+
+                                                    return <option
+                                                        key={oIndex}
+                                                        id={oIndex}
+                                                        value={oIndex}
+                                                        onSelect={() => {
+                                                            setData(oItem.catagoryVideos);
+                                                            setActiveId(oIndex)
+                                                        }}>
+                                                            {oItem.catagoryTitle}
+                                                        </option>
+
+                                                })}
+                                            </select>
+                                        </div>
+                                    </div>
+
                                 </div>
 
                                 {/* Video Bölümü */}
-                                <div className="videos-section col-xl-9 col-md-8 col-sm-12 ">
+                                <div className="videos-section col-xl-9 col-md-8 col-sm-12 col-xs-12 ">
 
                                     <div className="row">
                                         {
                                             data.map((oItem, oIndex) => {
-                                                return <div key={oIndex} className="col-sm-12 p-3 ">
-                                                    <div id="videos-text-container" style={{ minHeight: "90px",maxHeight:"95px" }}>
+                                                return <div key={oIndex} className="col-sm-12 col-xs-12 p-3 ">
+                                                    <div id="videos-text-container" style={{ minHeight: "90px", maxHeight: "95px" }}>
                                                         <div className="blurb-title text-start"><h3 style={{ fontSize: "18px" }}>{oItem.vidoTitle}</h3></div>
                                                         <div className="blurb-text text-start pb-3 ">{oItem.videoArticle}</div>
 
                                                     </div>
-                                                    <iframe style={{height:"25rem"}} frameBorder="0" scrolling="no" id="videos-container" src={oItem.videoUrl} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                                                    <iframe style={{ height: "25rem" }} frameBorder="0" scrolling="no" id="videos-container" src={oItem.videoUrl} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
                                                 </div>
                                             })

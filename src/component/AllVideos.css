@@ -1,7 +1,12 @@
 li.sidebarActive a .sidebar-title {
     color: var(--threed-color);
 }
-
+#combobox{
+    display: none;
+    position: sticky;
+    top: 100px;
+    height: 300px;
+}
 #sidebar {
     border-radius: 5px;
     margin-top: 2rem;
@@ -115,6 +120,13 @@ li.sidebarActive a .sidebar-title {
         min-width: 100%;
     }
     #sidebar {
-        min-width:100%
+        min-width:100%;
+        max-height: 400px !important;
+    }
+    #sidebar ul {
+      display: none;
+    }
+    #combobox{
+        display: block;
     }
 }
