@@ -103,7 +103,7 @@ const AllVideos = ({
                                 </div>
 
                                 {/* Video Bölümü */}
-                                <div className="videos-section col-xl-9 col-md-8 col-sm-12 ">
+                                <div className="videos-section col-xl-9 col-md-8 col-sm-12 m-auto">
                                 <div 
                                         id="combobox"
                                         className="mt-3 mb-3"
