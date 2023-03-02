@@ -35,7 +35,7 @@ const AllVideos = ({
                 document.getElementById(i).style.cssText = "font-size:16px;"
             }
         }
-
+        document.getElementById('rw_1_input').setAttribute('disabled',true)
     }, [activeId])
 
 
