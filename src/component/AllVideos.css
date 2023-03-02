@@ -12,6 +12,10 @@ li.sidebarActive a .sidebar-title {
     padding-left: 0;
     padding-right: 0;
 }
+#sidebar ul {
+    position: sticky;
+    top: 100px;
+}
 
 #sidebar li {
     border-bottom: 1px solid #828ca51f;
