@@ -13,7 +13,6 @@ const AllQuestions = ({
     scroolActive,
     setScroolActive
 }) => {
-    
     const questionsData = Questions
 
 
@@ -42,7 +41,13 @@ useEffect(() => {
                                     Medikal Hizmetler</h2>
                             <div className="container">
                                 <br />
-                                <Accordion defaultActiveKey="1">
+                                
+                                {/* {['Primary', 'Secondary', 'Success', 'Info', 'Warning', 'Danger'].map(
+        (variant) => ( */}
+
+                                
+
+                                <Accordion defaultActiveKey={['1','2','3','4','5']} alwaysOpen>
                                     {questionsData.map((element, index) => {
 
                                         return (
@@ -59,7 +64,6 @@ useEffect(() => {
                                         )
                                     })}
                                 </Accordion>
-
                                 <div className="accordion"></div>
                             </div>
                         </div>

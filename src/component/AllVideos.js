@@ -89,7 +89,7 @@ const AllVideos = ({
                                                         <div className="blurb-text text-start pb-3 ">{oItem.videoArticle}</div>
 
                                                     </div>
-                                                    <iframe style={{height:"20rem"}} frameBorder="0" scrolling="no" id="videos-container" src={oItem.videoUrl} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                                                    <iframe style={{height:"25rem"}} frameBorder="0" scrolling="no" id="videos-container" src={oItem.videoUrl} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
                                                 </div>
                                             })
