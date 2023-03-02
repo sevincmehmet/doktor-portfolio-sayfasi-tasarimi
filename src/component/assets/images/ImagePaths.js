@@ -17,4 +17,7 @@ export default {
     linkImg_2: require('./linkImg-2.jpg'),
     linkImg_3: require('./linkImg-3.jpg'),
     linkImg_4: require('./linkImg-4.jpg'),
+    bilgiPaylasim_0: require('./bilgiPaylasim-0.jpg'),
+    bilgiPaylasim_1: require('./bilgiPaylasim-1.jpg'),
+    bilgiPaylasim_2: require('./bilgiPaylasim-2.jpg'),
 }
