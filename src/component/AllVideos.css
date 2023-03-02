@@ -4,8 +4,8 @@ li.sidebarActive a .sidebar-title {
 #combobox{
     display: none;
     position: sticky;
-    top: 100px;
-    height: 300px;
+    top: 130px;
+    min-height: 320px;
 }
 #sidebar {
     border-radius: 5px;
@@ -51,7 +51,6 @@ li.sidebarActive a .sidebar-title {
 #videos-container {
     width: 100%;
 }
-
 
 /* #videos-text-container,
 #videos-container {
@@ -120,8 +119,7 @@ li.sidebarActive a .sidebar-title {
         min-width: 100%;
     }
     #sidebar {
-        min-width:100%;
-        max-height: 400px !important;
+        min-width:100%
     }
     #sidebar ul {
       display: none;

@@ -23,7 +23,7 @@ const AllVideos = ({
         document.getElementById('videolar').classList.add('linkActive')
 
     }, [scroolActive])
-
+    
     useEffect(() => {
         for (let i = 0; i < document.getElementsByClassName('sidebar-item').length; i++) {
             if (activeId == i) {
@@ -38,12 +38,24 @@ const AllVideos = ({
 
     }, [activeId])
 
-    var selectBox = document.getElementById("selectBox");
 
-    function changeFunc() {
+    const dataFilter = (oIndex) => {
+        setData(arrVideoCategory[oIndex].catagoryVideos);
+        setActiveId(oIndex)
+    }
 
-        var selectedValue = selectBox.options[selectBox.selectedIndex].value;
-        setData(arrVideoCategory[selectedValue].catagoryVideos);
+    const changeFunc = () => {
+        
+        for (let i = 0; i < arrVideoCategory.length; i++) {
+            document.getElementById("rw_2_listbox")?.getElementsByClassName('rw-list-option')[i].addEventListener("click", function() {
+                dataFilter(i)
+            });
+        }
+
+// alert(document.getElementById("rw_2_listbox")?.getElementsByClassName('rw-list-option')[1].innerHTML);
+
+
+
     }
 
     return (
@@ -63,7 +75,7 @@ const AllVideos = ({
 
                             <div className="row allVideos-container">
                                 {/* sideBar */}
-                                <div id="sidebar" className=" col-xl-3 col-md-4 col-sm-12 col-xs-12">
+                                <div id="sidebar" className=" col-xl-3 col-md-4 col-sm-12">
                                     <ul>
                                         {arrVideoCategory.map((oItem, oIndex) => {
 
@@ -73,8 +85,7 @@ const AllVideos = ({
                                                     className="rounded p-3 sidebar-item d-flex align-items-center justify-content-between"
                                                     href="#"
                                                     onClick={() => {
-                                                        setData(oItem.catagoryVideos);
-                                                        setActiveId(oIndex)
+                                                        dataFilter(oIndex)
                                                     }}
                                                 >
                                                     <div className="sidebar-title pe-4 text-truncate">
@@ -89,43 +100,28 @@ const AllVideos = ({
 
                                         })}
                                     </ul>
-                                    <div id="combobox"
+                                    <div 
+                                        id="combobox"
+                                        className=""
+                                      
                                     >
-                                        {/* <Combobox
+                                        <Combobox   onClick={() => {
+                                            changeFunc()
+                                        }}
                                             defaultValue="Aşı"
                                             data={["Aşı", "Hafta Hafta Gelişim", "Çocukluk Çağı Hastalıkları", "Sağlıklı Yaşam ve Fitnesil", "Uyku Eğitimleri", "Çocuklarda Davranış Eğitimi", "Otizm ve Hiperaktivite"]}
-                                        /> */}
-                                        <div className="custom-select">
-                                        <select id="selectBox" onChange={() => {
-                                            changeFunc()
-                                        }}>
-                                                {arrVideoCategory.map((oItem, oIndex) => {
-
-                                                    return <option
-                                                        key={oIndex}
-                                                        id={oIndex}
-                                                        value={oIndex}
-                                                        onSelect={() => {
-                                                            setData(oItem.catagoryVideos);
-                                                            setActiveId(oIndex)
-                                                        }}>
-                                                            {oItem.catagoryTitle}
-                                                        </option>
-
-                                                })}
-                                            </select>
-                                        </div>
+                                        />
                                     </div>
 
                                 </div>
 
                                 {/* Video Bölümü */}
-                                <div className="videos-section col-xl-9 col-md-8 col-sm-12 col-xs-12 ">
+                                <div className="videos-section col-xl-9 col-md-8 col-sm-12 ">
 
                                     <div className="row">
                                         {
                                             data.map((oItem, oIndex) => {
-                                                return <div key={oIndex} className="col-sm-12 col-xs-12 p-3 ">
+                                                return <div key={oIndex} className="col-sm-12 p-3 ">
                                                     <div id="videos-text-container" style={{ minHeight: "90px", maxHeight: "95px" }}>
                                                         <div className="blurb-title text-start"><h3 style={{ fontSize: "18px" }}>{oItem.vidoTitle}</h3></div>
                                                         <div className="blurb-text text-start pb-3 ">{oItem.videoArticle}</div>
