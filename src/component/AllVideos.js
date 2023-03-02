@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
 import "./arrVideoCategory";
-import "./AllVideos.css";
 import arrVideoCategory from "./arrVideoCategory";
 import ScrollToTop from "./ScrollToTop"
 import Navbar from "./Navbar"
 import Combobox from "react-widgets/Combobox";
-import "react-widgets/styles.css";
 
+import "./AllVideos.css";
 
 
 const AllVideos = ({
@@ -15,15 +14,17 @@ const AllVideos = ({
 }) => {
     const [data, setData] = useState(arrVideoCategory[0].catagoryVideos);
     const [activeId, setActiveId] = useState(0)
-    // const [dataTitle, setDataTitle] = useState[[]];
-
+    const [inpActive, setInpActive] = useState(true)
 
     useEffect(() => {
         setScroolActive(true)
         document.getElementById('videolar').classList.add('linkActive')
-
     }, [scroolActive])
-    
+    useEffect(() => {
+        setInpActive(false)
+      document.getElementById('rw_1_input')?.setAttribute('disabled',!inpActive)
+    }, [inpActive])
+
     useEffect(() => {
         for (let i = 0; i < document.getElementsByClassName('sidebar-item').length; i++) {
             if (activeId == i) {
@@ -35,7 +36,6 @@ const AllVideos = ({
                 document.getElementById(i).style.cssText = "font-size:16px;"
             }
         }
-        document.getElementById('rw_1_input').setAttribute('disabled',true)
     }, [activeId])
 
 
@@ -100,9 +100,13 @@ const AllVideos = ({
 
                                         })}
                                     </ul>
-                                    <div 
+                                </div>
+
+                                {/* Video Bölümü */}
+                                <div className="videos-section col-xl-9 col-md-8 col-sm-12 ">
+                                <div 
                                         id="combobox"
-                                        className=""
+                                        className="mt-3 mb-3"
                                       
                                     >
                                         <Combobox   onClick={() => {
@@ -112,12 +116,6 @@ const AllVideos = ({
                                             data={["Aşı", "Hafta Hafta Gelişim", "Çocukluk Çağı Hastalıkları", "Sağlıklı Yaşam ve Fitnesil", "Uyku Eğitimleri", "Çocuklarda Davranış Eğitimi", "Otizm ve Hiperaktivite"]}
                                         />
                                     </div>
-
-                                </div>
-
-                                {/* Video Bölümü */}
-                                <div className="videos-section col-xl-9 col-md-8 col-sm-12 ">
-
                                     <div className="row">
                                         {
                                             data.map((oItem, oIndex) => {
