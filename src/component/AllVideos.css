@@ -197,7 +197,7 @@ li.sidebarActive a .sidebar-title {
     position: absolute;
     left: 0;
     right: 0;
-    z-index: 2;
+    z-index: 7;
     height: 100%;
     width: 100%;
     background-color: #b2d8ff29;
@@ -536,7 +536,7 @@ li.sidebarActive a .sidebar-title {
   }
   
   .rw-combobox-input {
-    z-index: 1;
+    z-index: 0;
     border-bottom: 1px solid var(--black-color);
     /* background-color: var(--main-color); */
     padding-right: 1re;

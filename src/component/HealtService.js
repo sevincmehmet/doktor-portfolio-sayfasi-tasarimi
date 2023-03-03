@@ -1,15 +1,29 @@
+import { useEffect } from 'react';
+import WOW from 'wowjs'
+
 const HealtService = () => {
+
+    useEffect(() => {
+        new WOW.WOW({
+            live: false
+        }).init();
+    }, [])
+
     return (
         <>
             <div id="home-bottom" className="container">
-                <h2 className="home-title text-center" style={{ fontSize: "31.5px" }}>
+                <h2 className="wow fadeIn  home-title text-center" style={{ fontSize: "31.5px" }}>
                     Sağlık Hizmetleri
                 </h2>
                 <br />
                 <div className="row row-30">
                     <div className="offset-xxl-1 col-xxl-10 offset-xxl-1 ">
                         <div className="row">
-                            <div className="home-item col-sm-6 col-md-4 mb-4">
+
+                            <div
+                                data-wow-offset="30"
+                                data-wow-delay="0.2s"
+                                className="wow db center h7 mb6 zoomInRight home-item col-sm-6 col-md-4 mb-4">
                                 <article className="blurb blurb-hover">
                                     <div className="icon blurb-icon d-flex justify-content-center">
                                         <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
@@ -87,7 +101,10 @@ const HealtService = () => {
                                 </article>
                             </div>
 
-                            <div className="home-item col-sm-6 col-md-4 mb-4">
+                            <div
+                                data-wow-offset="30"
+                                data-wow-delay="0.2s"
+                                className="wow fadeIn home-item col-sm-6 col-md-4 mb-4">
                                 <article className="blurb blurb-hover">
                                     <div className="icon blurb-icon d-flex justify-content-center">
                                         <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
@@ -116,7 +133,10 @@ const HealtService = () => {
                                 </article>
                             </div>
 
-                            <div className="home-item col-sm-6 col-md-4">
+                            <div
+                                data-wow-offset="30"
+                                data-wow-delay="0.2s"
+                                className="wow db center h7 mb6 zoomInLeft home-item col-sm-6 col-md-4">
                                 <article className="blurb blurb-hover">
                                     <div className="icon blurb-icon d-flex justify-content-center">
                                         <svg width="64" height="64" viewBox="0 0 64 64" fill="none">

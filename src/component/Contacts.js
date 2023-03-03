@@ -10,7 +10,8 @@ const Contacts = () => {
                         <div className="container">
                             <div className="row row-30 justify-content-center">
                                 {/* ********************Ekranın Sol Tarafı ********************************/}
-                                <div className="col-sm-11 col-md-6">
+                                <div data-wow-delay="0.2s"
+                  className="test blue wow bounceInLeft col-sm-11 col-md-6">
                                     <h2 className="contacts-title">
                                         Randevunuzu Ücretsiz Olarak Oluşturabilirsiniz
                                     </h2>
@@ -67,7 +68,8 @@ const Contacts = () => {
                                     </div>
                                 </div>
                                 {/**********************Ekranın Sağ Tarafı*********************************/}
-                                <div className="col-sm-11 col-md-6">
+                                <div data-wow-delay="0.2s"
+                  className="test blue wow bounceInRight col-sm-11 col-md-6">
                                     <div className="form-box">
                                         <h2 className="contacts-title">İletişim Formu </h2>
                                         <form

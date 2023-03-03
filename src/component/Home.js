@@ -1,9 +1,17 @@
+import { useEffect } from "react";
 import home_image from "./assets/homeImg.png"
-
-
 import ImagePaths from "./assets/images/ImagePaths";
+import WOW from "wowjs"
 import "./Home.css";
+
 const Home = () => {
+  
+  useEffect(() => {
+    new WOW.WOW({
+        live: false
+    }).init();
+
+}, [])
   return (
     <>
       <div id="home-container" className="container">
@@ -11,18 +19,22 @@ const Home = () => {
           className="row row-30 justify-content-center justify-content-md-between flex-md-row-reverse justify-content-xxl-center
 "
         >
+          {/* Image-Container */}
           <div
             id="img-container"
-            className="col-auto col-sm-11 col-md-6 col-lg-5 float-none img-fluid"
+            data-wow-delay="0.2s" 
+            className="test blue wow bounceInRight float col-auto col-sm-11 col-md-6 col-lg-5 float-none img-fluid"
           >
             <img
               id="home-img"
               src={home_image}
             />
           </div>
+          {/* Write-Container */}
           <div
             id="write-container"
-            className="col-auto col-sm-8 col-md-6  col-xxl-5"
+            data-wow-delay="0.2s" 
+            className="test blue wow bounceInLeft float col-auto col-sm-8 col-md-6  col-xxl-5"
           >
             <h1 className="home-title display-1">Uzm. Dr. Osman Gönülal</h1>
             <h3 style={{color:"#177ee5"}} className="text-primary home-link">

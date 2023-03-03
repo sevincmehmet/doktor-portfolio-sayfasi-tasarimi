@@ -1,16 +1,21 @@
 
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import Main from "./component/Main";
 import AllQuestions from "./component/AllQuestions";
 import AllVideos from "./component/AllVideos"
 import { Routes, Route, Link, NavLink, Navigate } from "react-router-dom"
+import WOW from 'wowjs'
 
 import "./App.css";
 
 const App = () => {
   const [scroolActive, setScroolActive] = useState(false);
 
-
+  useEffect(() => {
+    new WOW.WOW({
+        live: false
+    }).init();
+}, [])
 
   return (<>
 

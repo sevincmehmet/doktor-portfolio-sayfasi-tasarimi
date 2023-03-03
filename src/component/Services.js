@@ -13,6 +13,8 @@ const Services = () => {
 
     }, [questionsData])
 
+
+    
     return (
         <>
             <div className="container">
@@ -28,7 +30,7 @@ const Services = () => {
 
                                     return (
 
-                                        <div key={index}>
+                                        <div className="fadeInDown" key={index}>
                                             <QuestionAnswer
                                                 id={element.id}
                                                 title={element.title}
