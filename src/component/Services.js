@@ -37,8 +37,9 @@ const Services = () => {
                                     return (
 
                                         <div
-                                            data-wow-delay={`0.${index}`}
-                                            className="wow fadeInDown" key={index}
+                                        data-wow-offset="20" 
+                                            data-wow-delay="0.7"
+                                            className="wow fadeIn" key={index}
                                         >
                                             <QuestionAnswer
                                                 id={element.id}
